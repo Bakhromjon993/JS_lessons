@@ -38,11 +38,11 @@
 
 // solution 7.
 
-let numbers = 23424324;
-let arrayNums = [];
-function toStringChange() {
-    return String(numbers);
-}
-numbers = toStringChange();
-arrayNums = [...numbers]
-console.log(arrayNums);
+// let numbers = 23424324;
+// let arrayNums = [];
+// function toStringChange() {
+//     return String(numbers);
+// }
+// numbers = toStringChange();
+// arrayNums = [...numbers]
+// console.log(arrayNums);
