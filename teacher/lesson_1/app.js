@@ -27,3 +27,28 @@ var string2,
     camelCasedName,
     snake_cased_name,
     PascalCasedName;
+
+var x = 3.14;
+var car = "BMW";
+var person = {
+    name: "Sardor",
+    age: 21
+};
+const calculate = number => number * 5;
+const anotherCalc = function (number) {
+    return number * 5;
+};
+
+function thirdCalc(number) {
+    return number * 5;
+};
+
+const deliveryRate = 8.5;
+
+var x = 5;
+var z = ++x;
+var y = z--;
+x %= 5;
+console.log(x, z, y);
+
+console.log(!(4 === '4') && ('string' == 'another' || 7 == 7));
