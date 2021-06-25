@@ -48,7 +48,16 @@
 
 
 // exercises 5.
+// const rotate = (str) => {
+//     setInterval(() => {
+//         let lastLetter = str.slice(-1);
+//         let restOfString = str.slice(0, -1);
+//         str = lastLetter + restOfString;
+//         console.log(str);
+//     }, 900);
+// }
 
+// rotate("w3resource");
 
 // exercises 6.
 
@@ -137,7 +146,10 @@
 // console.log(document.URL);
 
 // exercises 13.
-
+// var varName = "anotherName";
+// var n = 20;
+// this[varName] = n;
+// console.log(this[varName]);
 
 // exercises 14.
 
