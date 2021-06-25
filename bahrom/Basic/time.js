@@ -59,4 +59,40 @@ function texty(word) {
 // function interval(word) {
 //     setInterval(texty(word),2000)
 // }
-texty('w3resource')
+// texty('w3resource')
+
+/* TASK 6 */
+
+function gregorianYear(year) {
+    if (year % 100 === 0) {
+        if (year % 400 ===0){
+            console.log('This year ' + year + ' is a leap year')
+        } else if ( year % 4===0){
+            console.log('This year ' + year + ' is not a leap year')
+        }
+    } else {
+        console.log('This year ' + year + ' is a leap year')
+    }
+}
+gregorianYear(2016)
+gregorianYear(2000)
+gregorianYear(1700)
+gregorianYear(1800)
+gregorianYear(100)
+
+/* TASK 7 */
+
+function years() {
+    const yillar = []
+    for (let i = 2014; i < 2051; i++) {
+        if (new Date(i,0,1).getDay() === 0){
+            yillar.push(i)
+        }
+    }
+    console.log(yillar)
+}
+years()
+
+/* TASK 8 */
+
+// console.log(guessGame(10))
