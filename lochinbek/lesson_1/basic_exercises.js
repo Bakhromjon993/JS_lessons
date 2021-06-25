@@ -48,7 +48,16 @@
 
 
 // exercises 5.
+// const rotate = (str) => {
+//     setInterval(() => {
+//         let lastLetter = str.slice(-1);
+//         let restOfString = str.slice(0, -1);
+//         str = lastLetter + restOfString;
+//         console.log(str);
+//     }, 900);
+// }
 
+// rotate("w3resource");
 
 // exercises 6.
 
@@ -113,16 +122,170 @@
 // })
 
 
+// exercises 11.
+
+// function C(deg) {
+//     const ctem = deg;
+//     const F = ctem * 9 / 5 + 32;
+//     const m = `${ctem} C is ${F} F.`;
+//     console.log(m);
+// }
+// C(60);
+//
+// function F(deg) {
+//     const ftem = deg;
+//     const C = (ftem - 32) * 5 / 9;
+//     const m = `${ftem} F is ${C} C.`;
+//     console.log(m);
+// }
+// F(45);
 
 
+// exercises 12.
+
+// console.log(document.URL);
+
+// exercises 13.
+// var varName = "anotherName";
+// var n = 20;
+// this[varName] = n;
+// console.log(this[varName]);
+
+// exercises 14.
+
+// const file = 'photo.img';
+// let typeFile = file.split('.').pop();
+// console.log(typeFile)
 
 
+// exercises 15.
+
+// function my_func(n) {
+//     if (n <= 13) {
+//         return 13 - n;
+//     } else {
+//         return (n - 13) * 2;
+//     }
+// }
+// console.log(my_func(20));
 
 
+// exercises 16.
+
+// function compute(a, b) {
+//
+//     if (a === b) {
+//         return (a + b) * 3
+//     } else {
+//         return a + b
+//     }
+// }
+// console.log(compute(4, 4));
 
 
+// exercises 17.
+
+// function comp(n) {
+//     if (n <= 19) {
+//         return (19 - n);
+//     } else {
+//         return ((n - 19) * 3);
+//     }
+// }
+// console.log(comp(20));
+// console.log(comp(3));
+
+// exercises 18.
+
+// function comps1(a, b) {
+//     if ((a === 50) || (b === 50) || (a + b === 50)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+//
+// function comps2(a, b) {
+//     return (a === 50) || (b === 50) || (a + b === 50);
+// }
+//
+// console.log(comps1(123, 12));
+// console.log(comps1(123, 50));
+// console.log(comps2(23, 25));
+// console.log(comps2(50, 4));
 
 
+// exercises 19.
+
+// function comps3(a) {
+//     return ((Math.abs(100 - a) <= 20) || (Math.abs(400 - a) <= 20));
+// }
+// console.log(comps3(10));
+// console.log(comps3(90));
+// console.log(comps3(99));
+// console.log(comps3(199));
+// console.log(comps3(200));
+
+
+// exercises 20.
+
+// function comp4(a, b) {
+//     if ((a < 0 && b > 0) || (a > 0 && b < 0))
+//     {
+//         return true
+//     }
+// else
+//     {
+//         return false
+//     }
+// }
+//
+// console.log(comp4(200, -3));
+// console.log(comp4(200, 3));
+// console.log(comp4(200, 3));
+// console.log(comp4(-200, 3));
+
+
+// exercises 21.
+
+// function getWord(word) {
+//     let getTwo = word.slice(0, 2);
+//     if (getTwo !== "Po") {
+//
+//         return word.replace(getTwo, "Po")
+//     } else {
+//         return word
+//     }
+// }
+//
+// console.log(getWord('123'))
+// console.log(getWord('Poth'))
+// console.log(getWord('1000'))
+// console.log(getWord('POdsfsd'))
+// console.log(getWord('123'))
+
+
+// function string_check(str1) {
+//     if (str1 === null || str1 === undefined || str1.substring(0, 2) === 'Py')
+//     {
+//         return str1;
+//     }
+//     return `Py${str1}`;
+// }
+//
+// console.log(string_check("Python"));
+// console.log(string_check("thon"));
+
+
+// exercises 22.
+
+// function removeL(str, pos){
+//     return str.slice(0, pos) + str.slice(pos + 1, str.length)
+// }
+//
+// console.log(removeL("Python",0));
+// console.log(removeL("Python",3));
+// console.log(removeL("Python",5));
 
 
 
