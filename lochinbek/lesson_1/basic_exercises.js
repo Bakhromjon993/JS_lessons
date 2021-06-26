@@ -1,4 +1,4 @@
-// exercises 1.
+// exercise 1.
 
 // let today = new Date(),
 //     hours = today.toLocaleString('en-US', {hour: 'numeric', hour12: true}),
@@ -15,7 +15,7 @@
 // console.log( "Current Time : " + hours + " " + minutes + " " + seconds)
 
 
-// exercises 2.
+// exercise 2.
 
 // let btn = document.querySelector('.printClass');
 // btn.addEventListener("click", function(){
@@ -23,7 +23,7 @@
 // });
 
 
-// exercises 3.
+// exercise 3.
 
 // let date = new Date(),
 //     yyyy = date.getFullYear(),
@@ -37,7 +37,7 @@
 // console.log(dd + '/' + mm + '/' + yyyy);
 
 
-// exercises 4.
+// exercise 4.
 
 // let a = 5,
 //     b = 6,
@@ -47,7 +47,7 @@
 // console.log(area);
 
 
-// exercises 5.
+// exercise 5.
 // const rotate = (str) => {
 //     setInterval(() => {
 //         let lastLetter = str.slice(-1);
@@ -59,7 +59,7 @@
 
 // rotate("w3resource");
 
-// exercises 6.
+// exercise 6.
 
 // function getYear(year) {
 //     if (year % 4 === 0) {
@@ -76,7 +76,7 @@
 // console.log(getYear(100));
 
 
-// exercises 7.
+// exercise 7.
 
 // for (let x = 2014; x <= 2050; x++) {
 //     let day = new Date(x, 0, 1);
@@ -86,7 +86,7 @@
 // }
 
 
-// exercises 8.
+// exercise 8.
 
 // const number = Math.floor(Math.random() * 10);
 // const enterNumber = prompt('Guess the number between 1 and 10 inclusive')
@@ -97,7 +97,7 @@
 // }
 
 
-// exercises 9.
+// exercise 9.
 
 // let today = new Date().getTime(),
 //     crday = new Date(new Date().getFullYear(), 11, 25).getTime(),
@@ -105,7 +105,7 @@
 // console.log(Math.ceil(calc/(1000*60*60*24)));
 
 
-// exercises 10.
+// exercise 10.
 
 // let num1 = document.querySelector('.firstInput'),
 //     num2 = document.querySelector('.secondInput'),
@@ -122,7 +122,7 @@
 // })
 
 
-// exercises 11.
+// exercise 11.
 
 // function C(deg) {
 //     const ctem = deg;
@@ -141,24 +141,24 @@
 // F(45);
 
 
-// exercises 12.
+// exercise 12.
 
 // console.log(document.URL);
 
-// exercises 13.
+// exercise 13.
 // var varName = "anotherName";
 // var n = 20;
 // this[varName] = n;
 // console.log(this[varName]);
 
-// exercises 14.
+// exercise 14.
 
 // const file = 'photo.img';
 // let typeFile = file.split('.').pop();
 // console.log(typeFile)
 
 
-// exercises 15.
+// exercise 15.
 
 // function my_func(n) {
 //     if (n <= 13) {
@@ -170,7 +170,7 @@
 // console.log(my_func(20));
 
 
-// exercises 16.
+// exercise 16.
 
 // function compute(a, b) {
 //
@@ -183,7 +183,7 @@
 // console.log(compute(4, 4));
 
 
-// exercises 17.
+// exercise 17.
 
 // function comp(n) {
 //     if (n <= 19) {
@@ -195,7 +195,7 @@
 // console.log(comp(20));
 // console.log(comp(3));
 
-// exercises 18.
+// exercise 18.
 
 // function comps1(a, b) {
 //     if ((a === 50) || (b === 50) || (a + b === 50)) {
@@ -215,7 +215,7 @@
 // console.log(comps2(50, 4));
 
 
-// exercises 19.
+// exercise 19.
 
 // function comps3(a) {
 //     return ((Math.abs(100 - a) <= 20) || (Math.abs(400 - a) <= 20));
@@ -227,7 +227,7 @@
 // console.log(comps3(200));
 
 
-// exercises 20.
+// exercise 20.
 
 // function comp4(a, b) {
 //     if ((a < 0 && b > 0) || (a > 0 && b < 0))
@@ -246,7 +246,7 @@
 // console.log(comp4(-200, 3));
 
 
-// exercises 21.
+// exercise 21.
 
 // function getWord(word) {
 //     let getTwo = word.slice(0, 2);
@@ -277,7 +277,7 @@
 // console.log(string_check("thon"));
 
 
-// exercises 22.
+// exercise 22.
 
 // function removeL(str, pos){
 //     return str.slice(0, pos) + str.slice(pos + 1, str.length)
@@ -288,15 +288,55 @@
 // console.log(removeL("Python",5));
 
 
+// exercise 23.
+
+// const changeWord = (word) => {
+//     return word.split('').reverse().join('')
+// }
+//
+// console.log(changeWord('12345'));
 
 
+// exercise 24.
+
+// const changeWord2 = (word) => {
+//     let first = word.substr(0,1);
+//     return first + word + first
+// }
+//
+// console.log(changeWord2('12345'));
+// console.log(changeWord2('a'));
+// console.log(changeWord2('ab'));
+// console.log(changeWord2('abc'));
 
 
+// exercise 25.
+
+// const givenNumbers = (a) => {
+//     if ((a % 3 === 0) || (a % 7 === 0)) {
+//         return true
+//     }else {
+//         return false
+//     }
+// }
+// console.log(givenNumbers(7))
+// console.log(givenNumbers(1217))
+// console.log(givenNumbers(3))
+// console.log(givenNumbers(72))
 
 
-
-
-
+// exercise 26.
+// function changeWord3(str) {
+//     if (str.length >= 3) {
+//         const x = str.substr(str.length - 3, str.length)
+//         return x + str + x
+//     } else
+//         return false
+// }
+// console.log(changeWord3("abc"));
+// console.log(changeWord3("ab"));
+// console.log(changeWord3("abcd"));
+// console.log(changeWord3("rewdf"));
 
 
 
