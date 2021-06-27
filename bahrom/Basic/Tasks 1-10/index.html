@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="time.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Print</button>
+    <button id="btn2">Double click</button>
+    <br>
+    <br>
+    <input type="text" id="guess">
+    <button type="submit" id="guessBtn">Guess</button>
+
+    <div style="margin: 20px 0">
+            <h1>Calculator</h1>
+            <div style="margin: 5px">
+                <label for="firstNumber">1st number: </label><input id="firstNumber" type="text"/></n>
+            </div>
+            <div style="margin-bottom:10px ;">
+                <label for="secondNumber">2nd number: </label><input id="secondNumber" type="text">
+            </div>
+            <button onclick="multiplyBy()" type="submit" id="multiply">Multiply</button>
+            <button onclick="divideBy()" type="submit" id="divide">Divide</button>
+        <p>Result is :</p><p id="result"></p>
+    </div>
+</body>
+</html>
