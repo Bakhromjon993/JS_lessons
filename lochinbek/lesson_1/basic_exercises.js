@@ -339,8 +339,194 @@
 // console.log(changeWord3("rewdf"));
 
 
+// exercise 27.
+
+// const findWord = (word) => {
+//     if (word.length < 4) {
+//         return false
+//     }
+//     const fourWord = word.substring(0, 4);
+//     if (fourWord === 'java') {
+//         return true
+//     } else
+//         return false
+// }
+//
+// console.log(findWord('javafdsfass'));
 
 
+// exercise 28.
+
+// const compareNums = (a, b) => {
+//     if ((a > 50 && a <= 99) || (b >= 10 && b <= 99)) {
+//         return true
+//     }
+//     else {
+//         return false
+//     }
+// }
+//
+// console.log(compareNums(11, 770));
+// console.log(compareNums(62, 80));
+// console.log(compareNums(14, 99));
+
+
+// exercise 29.
+
+// const compareNums2 = (a, b, c) => {
+//     if ((a >= 50 && a <= 99) || (b >= 50 && b <= 99) || (c >= 50 && c <= 99)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(compareNums2(50, 90, 99));
+// console.log(compareNums2(5, 9, 199));
+// console.log(compareNums2(65, 89, 199));
+// console.log(compareNums2(65, 9, 199));
+
+
+// exercise 30.
+
+// const findWord3 = (word) => {
+//     if (word.length < 6) {
+//         return false
+//     }
+//     const fourWord = word.substring(word.length, word.length - 6);
+//     if (fourWord === 'Script' && word.length === 10) {
+//         return word.substring(0, 4)
+//     } else
+//         return word
+// }
+//
+// console.log(findWord3('JavaScript'));
+// console.log(findWord3('CoffeeScript'));
+
+
+// exercise 31.
+
+// const compareNums3 = (a, b, c) => {
+//     max = 0;
+//     if (a > b) {
+//         return max = a;
+//     } else {
+//         return max = b;
+//     }
+//     if (c > max) {
+//         return max = c
+//     }
+// }
+// console.log(compareNums3(1, 0, 1));
+// console.log(compareNums3(0, -10, -20));
+// console.log(compareNums3(1000, 510, 440));
+
+
+// exercise 32.
+
+// const compareNums4 = (a, b) => {
+//     if (a !== b) {
+//         x = Math.abs(a - 100);
+//         y = Math.abs(b - 100);
+//         if (x > y) {
+//             return b
+//         }
+//         if (y > x) {
+//             return a
+//         }
+//         return false
+//     }else {
+//         return false
+//     }
+// }
+// console.log(compareNums4(1, 1));
+// console.log(compareNums4(0, -20));
+// console.log(compareNums4(1000, 440));
+
+
+// exercise 33.
+
+// function com1(x, y) {
+//     if ((x >= 40 && x <= 60 && y >= 40 && y <= 60)
+//         ||
+//         (x >= 70 && x <= 100 && y >= 70 && y <= 100)
+//     ) {
+//         return true
+//     } else {
+//         return false
+//     }
+//
+// }
+//
+// console.log(com1(45, 60));
+// console.log(com1(25, 60));
+// console.log(com1(45, 80));
+// console.log(com1(44, 56));
+// console.log(com1(70, 95));
+// console.log(com1(50, 89));
+
+// exercise 34.
+
+// function max_num(x, y) {
+//     if ((x >= 40) && (x <= 60) && (y >= 40) && (y <= 60)) {
+//         if (x === y) {
+//             return "Numbers are the same";
+//         } else if (x > y) {
+//             return x;
+//         } else {
+//             return y;
+//         }
+//     } else {
+//         return "Numbers don't fit in range";
+//     }
+// }
+//
+// console.log(max_num(45, 60));
+// console.log(max_num(25, 60));
+// console.log(max_num(45, 80));
+
+
+// exercise 35.
+
+// const checkWord = (word, a) => {
+//     secondchar = word.substring(1, 2)
+//     if (secondchar === a) {
+//         return true
+//     }else {}
+//     return false
+// }
+// console.log(checkWord("Python", "y"));
+// console.log(checkWord("JavaScript", "a"));
+// console.log(checkWord("Console", "o"));
+// console.log(checkWord("Console", "C"));
+// console.log(checkWord("Console", "e"));
+// console.log(checkWord("JavaScript", "S"));
+
+
+// exercise 36. not ready
+
+// const compareNums3 = (a, b, c) => {
+//     if (a > 0 && b > 0 && c > 0) {
+//         let x = parseInt(a.toString().charAt(a.toString().length - 1)),
+//             y = parseInt(b.toString().charAt(b.toString().length - 1)),
+//             z = parseInt(c.toString().charAt(c.toString().length - 1));
+//         if (x === y && x === z && y === z) {
+//             return x + ' ' + y + ' ' + z;
+//         }
+//     } else {
+//         return false
+//     }
+//
+// }
+// console.log(compareNums3(12345, 12345, 13339));
+// console.log(compareNums3(-23, 10, 20));
+// console.log(compareNums3(100022, 510, 440));
+
+
+
+// exercise 37. not done
+
+
+// exercise 38.
 
 
 
