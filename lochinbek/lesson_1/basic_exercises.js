@@ -522,11 +522,56 @@
 // console.log(compareNums3(100022, 510, 440));
 
 
-
 // exercise 37. not done
 
 
-// exercise 38.
+// exercise 38. need explain
+
+// function exam(totmarks, last_exam) {
+//     if (last_exam) {
+//         return totmarks >= 90;
+//     } else {
+//         return (totmarks >= 89 && totmarks <= 100);
+//     }
+// }
+//
+// console.log(exam("78", ""));
+// console.log(exam("88", "true"));
+// console.log(exam("96", "true"));
+
+
+// exercise 39.
+
+// function ball(x, y) {
+//     const collect = x + y;
+//     if (collect >= 50 && collect <= 80) {
+//         return 65;
+//     }
+//     else {
+//         return 80;
+//     }
+// }
+//
+// console.log(ball(40, 30));
+// console.log(ball(60, 90));
+
+
+// exercise 40.
+
+// const compnum3 = (a, b) => {
+//     if (a === 8 || b === 8) {
+//         return true
+//     }
+//     if (a + b === 8 || Math.abs(a - b) === 8) {
+//         return true
+//     }
+//         return false
+// }
+// console.log(compnum3(7, 8));
+// console.log(compnum3(16, 8));
+// console.log(compnum3(24, 32));
+// console.log(compnum3(17, 18));
+
 
 
 
