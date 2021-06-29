@@ -93,13 +93,29 @@
 
 /* TASK 20 */
 
-function posOrNeg(num) {
-    if (num >= 0) {
-        return 'positive'
-    } else {
-        return 'negative'
-    }
+// function posOrNeg(num) {
+//     if (num >= 0) {
+//         return 'positive'
+//     } else {
+//         return 'negative'
+//     }
+// }
+//
+// console.log(posOrNeg(10))
+
+let f = 'Hello world' // HelloWorld
+//  f = f.split(' ').map(item => {
+//      return item[0].toUpperCase() + item.slice(1)
+//  }).join('')
+//
+// f = f.split(' ').map(item => {
+//     return item[0].toUpperCase() + item.slice(1)
+// }).join()
+
+f = f.split(' ')
+for (let i=0; i < f.length; i++){
+    console.log(f[i])
+    f[i] = f[i].charAt(0).toUpperCase() + f[i].slice(1)
 }
-
-console.log(posOrNeg(10))
-
+// const arr2 = f.join('')
+// console.log(arr2)
