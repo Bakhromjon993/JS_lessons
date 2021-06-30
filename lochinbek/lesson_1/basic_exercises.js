@@ -573,5 +573,89 @@
 // console.log(compnum3(17, 18));
 
 
+// exercise 41.
+
+// const treeNums = (a, b, c) => {
+//     if (a === b && b === c) {
+//         return 30;
+//     }
+//     if (a === b || b === c || c === a) {
+//         return 40;
+//     } else {
+//         return 20;
+//     }
+// }
+//
+// console.log(treeNums(8, 8, 8));
+// console.log(treeNums(8, 8, 18));
+// console.log(treeNums(8, 7, 18));
+
+
+// exercise 42.
+
+// function numss(a, b, c) {
+//     if (b > a && c > b) {
+//         return "strict mode";
+//     } else if (c > b)
+//         return "Soft mode";
+//     else
+//         return "Undefinded";
+// }
+//
+// console.log(numss(10, 15, 31));
+// console.log(numss(24, 22, 31));
+// console.log(numss(50, 21, 15));
+
+
+// exercise 43.
+
+// function lastD(a, b, c) {
+//     return (a % 10 === b % 10) ||
+//            (b % 10 === c % 10) ||
+//            (c % 10 === a % 10);
+//
+// }
+//
+// console.log(lastD(22, 32, 42));
+// console.log(lastD(102, 302, 2));
+// console.log(lastD(20, 22, 45));
+
+
+// exercise 44.
+
+// function lastwD(a, b, c) {
+//     return (a > 20 && (a < b || a < c)) ||
+//            (b > 20 && (b < a || b < c)) ||
+//            (c > 20 && (c < b || c < a))
+//
+// }
+//
+// console.log(lastwD(23, 45, 10));
+// console.log(lastwD(23, 23, 10));
+// console.log(lastwD(21, 66, 75));
+
+
+// exercise 45.
+
+// const twoNumsDif = (a, b) => {
+//     if ( (a === 15 || b === 15 || a + b === 15 || Math.abs(a - b) === 15)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(twoNumsDif(15, 9));
+// console.log(twoNumsDif(25, 15));
+// console.log(twoNumsDif(7, 8));
+// console.log(twoNumsDif(25, 10));
+// console.log(twoNumsDif(5, 9));
+// console.log(twoNumsDif(7, 9));
+// console.log(twoNumsDif(9, 25));
+
+
+
+
+
+
 
 
