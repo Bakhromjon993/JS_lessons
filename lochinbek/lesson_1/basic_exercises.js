@@ -653,6 +653,90 @@
 // console.log(twoNumsDif(9, 25));
 
 
+// exercise 46 need explain.
+
+// const sevenNums = (a, b) => {
+//     if (!((a % 7 === 0 || a % 11 === 0) && (b % 7 === 0 || b % 11 === 0))) {
+//         return ((a % 7 === 0 || a % 11 === 0) || (b % 7 === 0 || b % 11 === 0));
+//     } else {
+//         return false
+//     }
+// }
+// console.log(sevenNums(14, 21));
+// console.log(sevenNums(14, 20));
+// console.log(sevenNums(16, 20));
+
+
+// // exercise 47.
+//
+// function gift(a, b, n)
+// {
+//     if (n < 40 || n > 10000)
+//         return false;
+//     else
+//     if (n >= a && n <= b)
+//         return true;
+//     else
+//         return false;
+// }
+// console.log(gift(40, 4000, 45));
+// console.log(gift(80, 320, 79));
+// console.log(gift(89, 4000, 30));
+
+
+// exercise 48.
+
+// function reverseString(str) {
+//     return str.split("").reverse().join('');
+// }
+// console.log(reverseString("salom"));
+
+
+// exercise 49 not done.
+
+// exercise 50  need explain.
+
+// const capWord = (word) => {
+//     let wortToArray = word.split(''),
+//         otherL = wortToArray.splice(1, wortToArray.length).join(''),
+//         firstL = wortToArray[0].toUpperCase();
+//     return firstL + otherL
+// }
+//
+// console.log(capWord("salom"));
+
+// const Cublat = (words) => {
+//     words = words.split(' ');
+//     for (let i = 0; i < words.length; i++) {
+//         words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+//     }
+//     return words.join(' ')
+// }
+//
+// console.log(Cublat("Write a JavaScript program to capitalize the first letter of each word of a given string."));
+
+
+// exercise 51.
+
+// const changeToMin = (t) => {
+//     let hours = Math.floor(t / 60),
+//         minuts = t % 60
+//     return hours + ' : ' + minuts;
+// }
+// console.log(changeToMin(71));
+// console.log(changeToMin(450));
+// console.log(changeToMin(1441));
+
+
+// exercise 52.
+
+// const alfWord = (word) => {
+//      word = word.split('').sort().join('')
+//     return word
+// }
+//
+// console.log(alfWord('salom'));
+
 
 
 
