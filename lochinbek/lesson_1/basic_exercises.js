@@ -738,6 +738,102 @@
 // console.log(alfWord('salom'));
 
 
+// exercise 53.
+
+// const testAb = (words) => {
+//     return (/a...b/).test(words) || (/b...a/).test(words);
+// }
+// console.log(testAb('qweqwa qwbe aqwbe bwqbeq '));
+// console.log(testAb('b sa'));
+
+
+// exercise 54.
+
+// function vowels(str) {
+//
+//     return str.replace(/[^aeiou]/g, "").length
+// }
+//
+// console.log(vowels("wrwerwer sdfsiovb"));
+// console.log(vowels("ghfghertertasa oipoiptu"));
+
+
+// exercise 55.
+//
+// function pt(str) {
+//     return str.replace(/[^p]/g, "").length === str.replace(/[^t]/g, "").length
+// }
+//
+// console.log(pt("ppwer ttwer"));
+// console.log(pt("ppwep ttweret"));
+// console.log(pt("paatpss"));
+// console.log(pt("paatps"));
+
+
+// exercise 56 not done.
+
+
+// exercise 57.
+
+// const wordsCount = (word, times) => {
+//     if (times < 0) {
+//         return false
+//     } else {
+//         return word.repeat(times)
+//     }
+// }
+//
+// console.log(wordsCount("abc", 5));
+// console.log(wordsCount("abc", 0));
+// console.log(wordsCount("abc", -2));
+
+
+// exercise 58.
+
+// const wordst = (word) => {
+//     if (word <= 3) {
+//         return false
+//     } else {
+//         let wLength = word.length;
+//         let wReturn = word.substr(wLength - 3, wLength);
+//         return  wReturn + wReturn + wReturn + wReturn
+//     }
+// }
+//
+// console.log(wordst("abc123 qqq" ));
+// console.log(wordst("abcs da123 908asd"));
+// console.log(wordst("abc123 dfg"));
+
+
+// exercise 59.
+
+// const breakWord = (a) => {
+//     if (a % 2 === 0) {
+//         return a.substr(0, a.length / 2);
+//     }
+//     else {
+//         return a
+//     }
+// }
+// console.log(breakWord('1234567890'));
+// console.log(breakWord('wqweq'));
+
+
+// exercise 60.
+
+// const word2 = (a) => {
+//     let a2 = a.substring(1, a.length - 1)
+//     return a2;
+// }
+// console.log(word2('1234567890'));
+// console.log(word2('wqweq'));
+
+
+
+
+
+
+
 
 
 
