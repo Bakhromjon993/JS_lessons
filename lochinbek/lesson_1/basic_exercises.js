@@ -573,5 +573,269 @@
 // console.log(compnum3(17, 18));
 
 
+// exercise 41.
+
+// const treeNums = (a, b, c) => {
+//     if (a === b && b === c) {
+//         return 30;
+//     }
+//     if (a === b || b === c || c === a) {
+//         return 40;
+//     } else {
+//         return 20;
+//     }
+// }
+//
+// console.log(treeNums(8, 8, 8));
+// console.log(treeNums(8, 8, 18));
+// console.log(treeNums(8, 7, 18));
+
+
+// exercise 42.
+
+// function numss(a, b, c) {
+//     if (b > a && c > b) {
+//         return "strict mode";
+//     } else if (c > b)
+//         return "Soft mode";
+//     else
+//         return "Undefinded";
+// }
+//
+// console.log(numss(10, 15, 31));
+// console.log(numss(24, 22, 31));
+// console.log(numss(50, 21, 15));
+
+
+// exercise 43.
+
+// function lastD(a, b, c) {
+//     return (a % 10 === b % 10) ||
+//            (b % 10 === c % 10) ||
+//            (c % 10 === a % 10);
+//
+// }
+//
+// console.log(lastD(22, 32, 42));
+// console.log(lastD(102, 302, 2));
+// console.log(lastD(20, 22, 45));
+
+
+// exercise 44.
+
+// function lastwD(a, b, c) {
+//     return (a > 20 && (a < b || a < c)) ||
+//            (b > 20 && (b < a || b < c)) ||
+//            (c > 20 && (c < b || c < a))
+//
+// }
+//
+// console.log(lastwD(23, 45, 10));
+// console.log(lastwD(23, 23, 10));
+// console.log(lastwD(21, 66, 75));
+
+
+// exercise 45.
+
+// const twoNumsDif = (a, b) => {
+//     if ( (a === 15 || b === 15 || a + b === 15 || Math.abs(a - b) === 15)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(twoNumsDif(15, 9));
+// console.log(twoNumsDif(25, 15));
+// console.log(twoNumsDif(7, 8));
+// console.log(twoNumsDif(25, 10));
+// console.log(twoNumsDif(5, 9));
+// console.log(twoNumsDif(7, 9));
+// console.log(twoNumsDif(9, 25));
+
+
+// exercise 46 need explain.
+
+// const sevenNums = (a, b) => {
+//     if (!((a % 7 === 0 || a % 11 === 0) && (b % 7 === 0 || b % 11 === 0))) {
+//         return ((a % 7 === 0 || a % 11 === 0) || (b % 7 === 0 || b % 11 === 0));
+//     } else {
+//         return false
+//     }
+// }
+// console.log(sevenNums(14, 21));
+// console.log(sevenNums(14, 20));
+// console.log(sevenNums(16, 20));
+
+
+// // exercise 47.
+//
+// function gift(a, b, n)
+// {
+//     if (n < 40 || n > 10000)
+//         return false;
+//     else
+//     if (n >= a && n <= b)
+//         return true;
+//     else
+//         return false;
+// }
+// console.log(gift(40, 4000, 45));
+// console.log(gift(80, 320, 79));
+// console.log(gift(89, 4000, 30));
+
+
+// exercise 48.
+
+// function reverseString(str) {
+//     return str.split("").reverse().join('');
+// }
+// console.log(reverseString("salom"));
+
+
+// exercise 49 not done.
+
+// exercise 50  need explain.
+
+// const capWord = (word) => {
+//     let wortToArray = word.split(''),
+//         otherL = wortToArray.splice(1, wortToArray.length).join(''),
+//         firstL = wortToArray[0].toUpperCase();
+//     return firstL + otherL
+// }
+//
+// console.log(capWord("salom"));
+
+// const Cublat = (words) => {
+//     words = words.split(' ');
+//     for (let i = 0; i < words.length; i++) {
+//         words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+//     }
+//     return words.join(' ')
+// }
+//
+// console.log(Cublat("Write a JavaScript program to capitalize the first letter of each word of a given string."));
+
+
+// exercise 51.
+
+// const changeToMin = (t) => {
+//     let hours = Math.floor(t / 60),
+//         minuts = t % 60
+//     return hours + ' : ' + minuts;
+// }
+// console.log(changeToMin(71));
+// console.log(changeToMin(450));
+// console.log(changeToMin(1441));
+
+
+// exercise 52.
+
+// const alfWord = (word) => {
+//      word = word.split('').sort().join('')
+//     return word
+// }
+//
+// console.log(alfWord('salom'));
+
+
+// exercise 53.
+
+// const testAb = (words) => {
+//     return (/a...b/).test(words) || (/b...a/).test(words);
+// }
+// console.log(testAb('qweqwa qwbe aqwbe bwqbeq '));
+// console.log(testAb('b sa'));
+
+
+// exercise 54.
+
+// function vowels(str) {
+//
+//     return str.replace(/[^aeiou]/g, "").length
+// }
+//
+// console.log(vowels("wrwerwer sdfsiovb"));
+// console.log(vowels("ghfghertertasa oipoiptu"));
+
+
+// exercise 55.
+//
+// function pt(str) {
+//     return str.replace(/[^p]/g, "").length === str.replace(/[^t]/g, "").length
+// }
+//
+// console.log(pt("ppwer ttwer"));
+// console.log(pt("ppwep ttweret"));
+// console.log(pt("paatpss"));
+// console.log(pt("paatps"));
+
+
+// exercise 56 not done.
+
+
+// exercise 57.
+
+// const wordsCount = (word, times) => {
+//     if (times < 0) {
+//         return false
+//     } else {
+//         return word.repeat(times)
+//     }
+// }
+//
+// console.log(wordsCount("abc", 5));
+// console.log(wordsCount("abc", 0));
+// console.log(wordsCount("abc", -2));
+
+
+// exercise 58.
+
+// const wordst = (word) => {
+//     if (word <= 3) {
+//         return false
+//     } else {
+//         let wLength = word.length;
+//         let wReturn = word.substr(wLength - 3, wLength);
+//         return  wReturn + wReturn + wReturn + wReturn
+//     }
+// }
+//
+// console.log(wordst("abc123 qqq" ));
+// console.log(wordst("abcs da123 908asd"));
+// console.log(wordst("abc123 dfg"));
+
+
+// exercise 59.
+
+// const breakWord = (a) => {
+//     if (a % 2 === 0) {
+//         return a.substr(0, a.length / 2);
+//     }
+//     else {
+//         return a
+//     }
+// }
+// console.log(breakWord('1234567890'));
+// console.log(breakWord('wqweq'));
+
+
+// exercise 60.
+
+// const word2 = (a) => {
+//     let a2 = a.substring(1, a.length - 1)
+//     return a2;
+// }
+// console.log(word2('1234567890'));
+// console.log(word2('wqweq'));
+
+
+
+
+
+
+
+
+
+
 
 
