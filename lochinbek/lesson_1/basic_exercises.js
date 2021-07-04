@@ -898,7 +898,6 @@
 // console.log(concatW("abrssssr", "cdef"));
 
 
-
 // function str_con_cat(str1, str2) {
 //     const m = Math.min(str1.length, str2.length);
 //
@@ -910,3 +909,110 @@
 
 
 // exercise 65.
+
+// const wodsSl = (a) =>{
+//     if (a.slice(-6) === 'Script'){
+//         return true
+//     }
+//     return false
+// }
+// console.log(wodsSl("JavaScript"));
+// console.log(wodsSl("Java Script"));
+// console.log(wodsSl("Java Scripts"));
+
+
+// exercise 66.
+
+// const wodsSl2 = (a) => {
+//     if (a.length > 3 && (a.slice(0, 3) === 'Los' || a.slice(0, 3) === 'New')) {
+//         return a
+//     } else {
+//         return false
+//     }
+// }
+// console.log(wodsSl2("New York"));
+// console.log(wodsSl2("Los Angeles"));
+// console.log(wodsSl2("London"));
+
+
+// exercise 67.
+
+// function nop(str) {
+//     let start_pos = 0;
+//     let end_pos = str.length;
+//
+//     if (str.length > 0 && str.charAt(0) === 'P')
+//     {
+//         start_pos = 1;
+//     }
+//
+//     if (str.length > 1 && str.charAt(str.length - 1) === 'P')
+//     {
+//         end_pos--;
+//     }
+//
+//     return str.substring(start_pos, end_pos);
+// }
+//
+// console.log(nop("PythonP"));
+// console.log(nop("Python"));
+// console.log(nop("JavaScript"));
+
+
+// exercise 68.
+
+// const wordCh = (word, num) => {
+//     let wlen = word.length,
+//         start = word.substring(0, num),
+//         end = word.substring(wlen - num);
+//     return start + end;
+// }
+//
+// console.log(wordCh("JavaScript", 2));
+// console.log(wordCh("JavaScript", 3));
+
+
+// exercise 69.
+
+// first
+// const arr = (a) => {
+//     const sum = a.reduce((sum, number) => {
+//         const updatedSum = sum + number;
+//         return updatedSum;
+//     }, 0);
+//     return sum
+// }
+//
+// console.log(arr([10, 32, 20]));
+// console.log(arr([5, 7, 9]));
+// console.log(arr([0, 8, -11]));
+
+// second
+// const arr = (a) => {
+//     let sum = 0;
+//     for (let i = 0; i < a.length; i++) {
+//          sum+= a[i];
+//     }
+//     return sum
+// }
+// console.log(arr([10, 32, 20]));
+// console.log(arr([5, 7, 9]));
+// console.log(arr([0, 8, -11]));
+
+
+// exercise 70.
+
+// function rotate_elements_left(array)
+// {
+//     return [array[1], array[2], array[0]];
+// }
+// console.log(rotate_elements_left([3, 4, 5]));
+// console.log(rotate_elements_left([0, -1, 2]));
+// console.log(rotate_elements_left([7, 6, 5]));
+
+
+
+
+
+
+
