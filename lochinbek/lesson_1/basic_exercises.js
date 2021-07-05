@@ -829,9 +829,186 @@
 // console.log(word2('wqweq'));
 
 
+// exercise 61.
+
+// const joinWords = (a, b) =>{
+//     let a2 = a.slice(1),
+//         b2 = b.slice(1);
+//     return a2 + b2
+// }
+//
+// console.log(joinWords('ad', 'bf'));
+// console.log(joinWords("PHP","JS"));
+// console.log(joinWords("A","B"));
+// console.log(joinWords("AA","BB"));
 
 
+// exercise 62.
 
+// const x = (a) => {
+//     if (a.length > 0){
+//         let a2 = a.slice(-3),
+//             a3 = a.slice(0, -3)
+//         return a2 + a3;
+//     }
+//     return a;
+// }
+// console.log(x('abcdefgh'));
+// console.log(x("Python"));
+// console.log(x("JavaScript"));
+// console.log(x("Hi"));
+
+
+// exercise 63.
+
+// const middleW = (a) => {
+//     if (a.length % 2 !== 0) {
+//        let aStart = (a.length  - 3) / 2;
+//        return a.substr( aStart, 3)
+//     }
+//     return a;
+// }
+// console.log(middleW('abcdefg'));
+// console.log(middleW('HTML5'));
+// console.log(middleW('Python'));
+// console.log(middleW('PHP'));
+// console.log(middleW('Exercises'));
+
+
+// exercise 64.
+
+// const concatW = (a, b) => {
+//     let aLeng = a.length,
+//         bLeng = b.length;
+//     if (aLeng > bLeng) {
+//         let com = aLeng - bLeng;
+//         return a.slice(com).concat(b);
+//     }
+//     if (aLeng < bLeng) {
+//         let com2 = bLeng - aLeng;
+//         return a.concat(b.slice(com2));
+//     }
+//     return a.concat(b);
+// }
+//
+// console.log(concatW("Python", "JS"));
+// console.log(concatW("ab", "cdef"));
+// console.log(concatW("abewrdsfrr", "cdsdfdsef"));
+// console.log(concatW("abrsssr", "cdvvvcef"));
+// console.log(concatW("abrssssr", "cdef"));
+
+
+// function str_con_cat(str1, str2) {
+//     const m = Math.min(str1.length, str2.length);
+//
+//     return str1.substring(str1.length - m) + str2.substring(str2.length - m);
+// }
+//
+// console.log(str_con_cat("Python", "JS"));
+// console.log(str_con_cat("ab", "cdef"));
+
+
+// exercise 65.
+
+// const wodsSl = (a) =>{
+//     if (a.slice(-6) === 'Script'){
+//         return true
+//     }
+//     return false
+// }
+// console.log(wodsSl("JavaScript"));
+// console.log(wodsSl("Java Script"));
+// console.log(wodsSl("Java Scripts"));
+
+
+// exercise 66.
+
+// const wodsSl2 = (a) => {
+//     if (a.length > 3 && (a.slice(0, 3) === 'Los' || a.slice(0, 3) === 'New')) {
+//         return a
+//     } else {
+//         return false
+//     }
+// }
+// console.log(wodsSl2("New York"));
+// console.log(wodsSl2("Los Angeles"));
+// console.log(wodsSl2("London"));
+
+
+// exercise 67.
+
+// function nop(str) {
+//     let start_pos = 0;
+//     let end_pos = str.length;
+//
+//     if (str.length > 0 && str.charAt(0) === 'P')
+//     {
+//         start_pos = 1;
+//     }
+//
+//     if (str.length > 1 && str.charAt(str.length - 1) === 'P')
+//     {
+//         end_pos--;
+//     }
+//
+//     return str.substring(start_pos, end_pos);
+// }
+//
+// console.log(nop("PythonP"));
+// console.log(nop("Python"));
+// console.log(nop("JavaScript"));
+
+
+// exercise 68.
+
+// const wordCh = (word, num) => {
+//     let wlen = word.length,
+//         start = word.substring(0, num),
+//         end = word.substring(wlen - num);
+//     return start + end;
+// }
+//
+// console.log(wordCh("JavaScript", 2));
+// console.log(wordCh("JavaScript", 3));
+
+
+// exercise 69.
+
+// first
+// const arr = (a) => {
+//     const sum = a.reduce((sum, number) => {
+//         const updatedSum = sum + number;
+//         return updatedSum;
+//     }, 0);
+//     return sum
+// }
+//
+// console.log(arr([10, 32, 20]));
+// console.log(arr([5, 7, 9]));
+// console.log(arr([0, 8, -11]));
+
+// second
+// const arr = (a) => {
+//     let sum = 0;
+//     for (let i = 0; i < a.length; i++) {
+//          sum+= a[i];
+//     }
+//     return sum
+// }
+// console.log(arr([10, 32, 20]));
+// console.log(arr([5, 7, 9]));
+// console.log(arr([0, 8, -11]));
+
+
+// exercise 70.
+
+// function rotate_elements_left(array)
+// {
+//     return [array[1], array[2], array[0]];
+// }
+// console.log(rotate_elements_left([3, 4, 5]));
+// console.log(rotate_elements_left([0, -1, 2]));
+// console.log(rotate_elements_left([7, 6, 5]));
 
 
 
