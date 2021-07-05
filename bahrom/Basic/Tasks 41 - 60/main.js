@@ -79,6 +79,56 @@
 
 /* TASK 47 */
 
+// function test_digit(x, y, n) {
+//     if (n < 40 && n > 10000){
+//         return false
+//     } else {
+//         if (n >= x && n <= y)
+//             return true;
+//         else
+//             return false;
+//     }
+// }
+//
+// console.log(test_digit(40, 4000, 45));
+// console.log(test_digit(80, 320, 79));
+// console.log(test_digit(89, 4000, 30));
+
+
+/* TASK 48 */
+
+// function reverseString(string) {
+//     return string.split('').reverse().join('')
+// }
+//
+// console.log(reverseString('Reserve'))
+
+// /* TASK 49 */ need to ask
+
+
+/* TASK 50 */
+
+function capitilize(string) {
+    const arrofWords = string.split(' ')
+    console.log(arrofWords)
+    const arrofWordsCased = []
+
+    for (let i=0; i<arrofWords.length; i++){
+        const word = arrofWords[i]
+        arrofWordsCased.push(word[0].toUpperCase() + word.slice(1).toLowerCase())
+    }
+    return  arrofWordsCased.join(' ')
+}
+
+console.log(capitilize('assa asdddddsa dsadas'))
+
+/* TASK 51 */
+
+function toHours(num) {
+    return Math.floor(num / 60)
+}
+
+console.log(toHours(450))
 // function sum(arr) {
 //     const sum = (accumulator, val) => accumulator + val
 //     return arr.reduce(sum)
