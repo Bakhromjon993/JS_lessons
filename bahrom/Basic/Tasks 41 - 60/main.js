@@ -108,27 +108,53 @@
 
 /* TASK 50 */
 
-function capitilize(string) {
-    const arrofWords = string.split(' ')
-    console.log(arrofWords)
-    const arrofWordsCased = []
-
-    for (let i=0; i<arrofWords.length; i++){
-        const word = arrofWords[i]
-        arrofWordsCased.push(word[0].toUpperCase() + word.slice(1).toLowerCase())
-    }
-    return  arrofWordsCased.join(' ')
-}
-
-console.log(capitilize('assa asdddddsa dsadas'))
+// function capitilize(string) {
+//     const arrofWords = string.split(' ')
+//     const arrofWordsCased = []
+//
+//     for (let i=0; i<arrofWords.length; i++){
+//         const word = arrofWords[i]
+//         arrofWordsCased.push(word[0].toUpperCase() + word.slice(1).toLowerCase())
+//     }
+//     return  arrofWordsCased.join(' ')
+// }
+//
+// console.log(capitilize('assa asdddddsa dsadas'))
 
 /* TASK 51 */
 
-function toHours(num) {
-    return Math.floor(num / 60)
+// function toHours(num) {
+//     let hour = Math.floor(num / 60)
+//     let minutes = num % 60
+//     return `It is ${hour} hours and ${minutes} minutes `
+// }
+//
+// console.log(toHours(450))
+
+/* TASK 52 */
+
+// function alphabetOrder(string) {
+//     return string.split('').map(a => a.charCodeAt(0)).sort((a, b) => a - b).map(b => String.fromCharCode(b)).join('')
+// }
+//
+// console.log(alphabetOrder('Python'))
+
+/* TASK 53 */
+
+function ab_Check(string) {
+    let a = string.split('').indexOf('a')
+    let b = string.split('').indexOf('b')
+    return
+
 }
 
-console.log(toHours(450))
+
+console.log(ab_Check("Chainsbreak"));
+// console.log(ab_Check("pane borrowed"));
+// console.log(ab_Check("abCheck"));
+
+
+
 // function sum(arr) {
 //     const sum = (accumulator, val) => accumulator + val
 //     return arr.reduce(sum)
@@ -150,10 +176,10 @@ console.log(toHours(450))
 //
 // console.log(asd([17, 28, 30], [99, 16, 8]))
 
-function sum(arr) {
-    return arr.reduce((target, item) => {
-        return target + item
-    }, 0)
-}
-
-console.log(sum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005]))
+// function sum(arr) {
+//     return arr.reduce((target, item) => {
+//         return target + item
+//     }, 0)
+// }
+//
+// console.log(sum([1001458909, 1004570889, 1007019111, 1003302837, 1002514638, 1006431461, 1002575010, 1007514041, 1007548981, 1004402249]))
