@@ -86,18 +86,24 @@
 //
 // console.log(sum([1,2,4]))
 
-function asd(a, b) {
-    let c = [0, 0]
-    for(let i=0; i<a.length; i++){
-        if (a[i] > b[i]){
-            return c[0] += 1
-        } else if (a[i] < b[i]){
-            return c[1] += 1
-        } else {
-            return "Nobody receives a point"
-        }
-    }
-    return c
+// function asd(a, b) {
+//     let c = [0, 0]
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] > b[i]) {
+//             c[0] += 1
+//         } else if (a[i] < b[i]) {
+//             c[1] += 1
+//         }
+//     }
+//     return c
+// }
+//
+// console.log(asd([17, 28, 30], [99, 16, 8]))
+
+function sum(arr) {
+    return arr.reduce((target, item) => {
+        return target + item
+    }, 0)
 }
 
-console.log(asd([17, 28, 30], [99, 16, 8]))
+console.log(sum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005]))
