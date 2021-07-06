@@ -1011,6 +1011,86 @@
 // console.log(rotate_elements_left([7, 6, 5]));
 
 
+// exercise 71.
+
+// const one = (num) => {
+//     if (num[0] === 1 || num[num.length - 1] === 1) {
+//         return true
+//     }else {
+//         return false
+//     }
+// }
+//
+// console.log(one([1, 3, 5]));
+// console.log(one([3, 5, 1]));
+// console.log(one([2, 4, 6]));
+
+
+// exercise 72.
+
+// const enums = (arr) => {
+//     return arr[0] === arr[arr.length - 1]
+// }
+//
+// console.log(enums([10, 20, 30]));
+// console.log(enums([10, 20, 30, 10]));
+// console.log(enums([20, 20, 20]));
+
+
+// exercise 73.
+
+// const rearr = (arr) =>{
+//    return arr.reverse();
+// }
+//
+// console.log(rearr([5, 4, 3]));
+// console.log(rearr([1, 0, -1]));
+// console.log(rearr([2, 3, 1]));
+
+
+// const reArr = (arr) => {
+//     return arr.map((element, idx, arr) => arr[(arr.length - 1) - idx]);
+// }
+// console.log(reArr([5, 4, 3]));
+// console.log(reArr([1, 0, -1]));
+// console.log(reArr([2, 3, 1]));
+
+
+// exercise 74 not ready.
+
+// const setArr = (arr) => {
+//     let maxValue = Math.max(arr[0], arr[arr.length - 1]);
+//     let sum = 0;
+//     for(let i = 0; i<arr.length; i++){
+//       sum += arr[i]
+//
+//     }
+//     return sum
+// }
+// console.log(setArr([20, 30, 40]));
+// console.log(setArr([-7, -9, 0]));
+// console.log(setArr([12, 10, 3]));
+
+
+// exercise 75.
+
+// const makeArr = (arr1, arr2) => {
+//     let newArr = [arr1[1], arr2[1]]
+//     return newArr
+// }
+//
+// console.log(makeArr([1, 2, 3], [1, 5, 6]));
+// console.log(makeArr([3, 3, 3], [2, 8, 0]));
+// console.log(makeArr([4, 2, 7], [2, 4, 5]));
+
+
+
+
+
+
+
+
+
 
 
 
