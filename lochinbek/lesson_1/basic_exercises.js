@@ -1121,5 +1121,59 @@
 // console.log(findNum([0, 1]));
 
 
+// exercise 79.
+
+// function twice3040(arra1) {
+//     let a = arra1[0],
+//         b = arra1[1];
+//     return (a === 30 && b === 30) || (a === 40 && b === 40);
+// }
+//
+// console.log(twice3040([30, 30]));
+// console.log(twice3040([40, 40]));
+// console.log(twice3040([20, 20]));
+// console.log(twice3040([30]));
+
+
+// exercise 80.
+
+//my solution
+// const changeArr = (arr) => {
+//     if (arr.length> 1){
+//         let firstA = arr[0],
+//             lastA = arr[arr.length - 1],
+//             newArr = arr.slice(1, arr.length - 1);
+//         newArr.push(firstA);
+//         newArr.unshift(lastA);
+//         return  newArr
+//     }
+//     return  arr
+// }
+//
+// console.log(changeArr([1, 2, 3, 4]));
+// console.log(changeArr([0, 5]));
+// console.log(changeArr([3]));
+
+// second
+// function swap(arra) {
+//     [arra[0], arra[arra.length - 1]] = [arra[arra.length - 1], arra[0]];
+//     return arra;
+// }
+// console.log(swap([1, 2, 3, 4]));
+// console.log(swap([0, 2, 1]));
+// console.log(swap([3]));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
