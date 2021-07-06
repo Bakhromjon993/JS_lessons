@@ -1056,16 +1056,15 @@
 // console.log(reArr([2, 3, 1]));
 
 
-// exercise 74 not ready.
+// exercise 74.
 
 // const setArr = (arr) => {
 //     let maxValue = Math.max(arr[0], arr[arr.length - 1]);
 //     let sum = 0;
 //     for(let i = 0; i<arr.length; i++){
-//       sum += arr[i]
-//
+//       arr[i] = maxValue
 //     }
-//     return sum
+//     return arr
 // }
 // console.log(setArr([20, 30, 40]));
 // console.log(setArr([-7, -9, 0]));
@@ -1084,14 +1083,42 @@
 // console.log(makeArr([4, 2, 7], [2, 4, 5]));
 
 
+// exercise 76.
+
+// const makeArr = (arr) => {
+//     return [arr[0], arr[arr.length - 1]]
+// }
+//
+// console.log(makeArr([20, 20, 30]));
+// console.log(makeArr([5, 2, 7, 8]));
+// console.log(makeArr([17, 12, 34, 78]));
 
 
+// exercise 77 not ready.
+
+// const findNum = (arr) => {
+//     if (arr.indexOf(1) >= 0 || arr.indexOf(3) >= 0) {
+//         return true
+//     }
+//     return false
+// }
+// console.log(findNum([1, 5]));
+// console.log(findNum([2, 3]));
+// console.log(findNum([7, 5]));
 
 
+// exercise 78.
 
-
-
-
+// const findNum = (arr) => {
+//     if (arr.indexOf(1) < 0 && arr.indexOf(3) < 0) {
+//         return true
+//     }else {
+//       return false
+//     }
+// }
+// console.log(findNum([7, 8]));
+// console.log(findNum([3, 2]));
+// console.log(findNum([0, 1]));
 
 
 
