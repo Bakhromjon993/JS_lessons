@@ -52,3 +52,26 @@
 // console.log(nums2);
 // exercise test.
 
+
+
+// masala: arrayni istalgan 2 ta element qiymati bir birga teng ekanligini aniqlash uchun funksiya
+// const bothE = (arr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] === arr[j]) {
+//                 return true
+//             }
+//         }
+//     }
+//     return false
+// }
+//
+// console.log(bothE([30, 30, 23, 234, 45, 456]));
+// console.log(bothE([40, 324, 234, 55, 33]));
+// console.log(bothE([1, 6]));
+// console.log(bothE([20, 21, 44, 56, 20]));
+// console.log(bothE([30, 30]));
+// console.log(bothE([40, 40]));
+// console.log(bothE([20, 20]));
+// console.log(bothE([30]));
+
