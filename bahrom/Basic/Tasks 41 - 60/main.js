@@ -141,18 +141,108 @@
 
 /* TASK 53 */
 
-function ab_Check(string) {
-    let a = string.split('').indexOf('a')
-    let b = string.split('').indexOf('b')
-    return
-
-}
-
-
-console.log(ab_Check("Chainsbreak"));
+// function ab_Check(string) {
+//     return (/a...b/).test(string) || (/b...a/).test(string)
+// }
+//
+//
+// console.log(ab_Check("Chainsbreak"));
 // console.log(ab_Check("pane borrowed"));
 // console.log(ab_Check("abCheck"));
 
+/* TASK 54 */
+
+// function vowel_Count(string) {
+//     return string.replace(/[^aeiou]/g, '').length
+// }
+//
+// console.log(vowel_Count("Python"));
+// console.log(vowel_Count("w3resource.com"));
+
+/* TASK 55 */
+
+// function equal_pt(string) {
+//     let p = string.replace(/[^p]/g, '')
+//     let t = string.replace(/[^t]/g, '')
+//     if (p.length === t.length){
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+//
+// console.log(equal_pt("paattpss"));
+// console.log(equal_pt("paatps"));
+
+/* TASK 56 */
+
+// function division_string(n1, n2) {
+//
+//     n1 = 80;
+//     n2 = 6;
+//
+//     var div = Math.round(n1 / n2).toString(),
+//         result_array = div.split("");
+//
+//     if (div >= 1000) {
+//         for (var i = div.length - 3; i > 0; i -= 3) {
+//             result_array.splice(i, 0, ",");
+//         }
+//         result_array;
+//     }
+//     console.log(result_array);
+// }
+//
+// console.log(division_string(80, 20))
+
+/* TASK 57 */
+
+// function copies(string, num) {
+//     // if (num > 0){
+//     //     return string.repeat(num)
+//     // } else {
+//     //     return string
+//     // }
+//     let word = ''
+//     for (let i = 0; i < num; i++){
+//         word += string
+//     }
+//     return word
+// }
+//
+// console.log(copies('ass', 4))
+
+/* TASK 58 */
+
+// function cop(string, val) {
+//     let lastLetters = string.slice(string.length - 3, string.length)
+//     return lastLetters.repeat(val)
+// }
+//
+// console.log(cop('Python', 5))
+
+/* TASK 59 */
+
+// function first_half(string) {
+//     if (string.length % 2 === 0){
+//         return string.substring(string.length / 2)
+//     } else {
+//         return string
+//     }
+// }
+// console.log(first_half("Python"));
+// console.log(first_half("JavaScript"));
+// console.log(first_half("PHP"));
+
+/* TASK 60 */
+
+// function without_first_end(string) {
+//     return string.substr(1, string.length - 2)
+// }
+//
+// console.log(without_first_end('JavaScript'));
+// console.log(without_first_end('JS'));
+// console.log(without_first_end('PHP'));
 
 
 // function sum(arr) {
