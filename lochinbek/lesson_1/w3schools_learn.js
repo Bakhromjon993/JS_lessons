@@ -35,3 +35,52 @@
 // console.log(months[m.getMonth()])
 
 
+// JavaScript Switch Statement
+
+// let day;
+// switch (new Date().getDay()) {
+//     case 0:
+//         day = "Sunday";
+//         break;
+//     case 1:
+//         day = "Monday";
+//         break;
+//     case 2:
+//         day = "Tuesday";
+//         break;
+//     case 3:
+//         day = "Wednesday";
+//         break;
+//     case 4:
+//         day = "Thursday";
+//         break;
+//     case 5:
+//         day = "Friday";
+//         break;
+//     case  6:
+//         day = "Saturday";
+//
+// }
+// console.log(day);
+
+
+
+// const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+//
+// all_cars = []
+//
+// for (let i = 1; i<cars.length; i++){
+//     all_cars += cars[i] + ' '
+// }
+// console.log(all_cars);
+
+
+
+
+
+
+
+
+
+
+
