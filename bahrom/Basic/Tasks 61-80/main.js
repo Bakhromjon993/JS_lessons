@@ -131,6 +131,33 @@
 
 /* TASK 71 */
 
+// function first_last_1(nums) {
+//      return nums[0] === 1 || nums[nums.length - 1] === 1;
+// }
+// console.log(first_last_1([1, 3, 5]));
+// console.log(first_last_1([1, 3, 5, 1]));
+// console.log(first_last_1([2, 4, 6]));
+
+/* TASK 72 */
+
+// function first_last_same(arrays) {
+//     return arrays[0] === arrays[arrays.length - 1]
+// }
+//
+// console.log(first_last_same([10, 20, 30]));
+// console.log(first_last_same([10, 20, 30, 10]));
+// console.log(first_last_same([20, 20, 20]));
+
+/* TASK 73 */
+
+// function reverse3(array) {
+//     return array.reverse()
+// }
+// console.log(reverse3([5, 4, 3]));
+// console.log(reverse3([1, 0, -1]));
+// console.log(reverse3([2, 3, 1]));
+
+
 
 
 
