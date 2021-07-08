@@ -1164,8 +1164,330 @@
 // console.log(swap([3]));
 
 
+// exercise 81.
+
+// const addNum = (num) => {
+//     let arrNum = num.toString().split(''),
+//         colcNum = 0;
+//     arrNum.forEach(i => {
+//         colcNum += parseInt(i)
+//     })
+//     return colcNum
+// }
+// console.log(addNum(11111));
+// console.log(addNum(25));
+// console.log(addNum(50));
 
 
+// exercise 82.
+
+// const morTen = (a) => {
+//     if (a >= 10) {
+//         let pt = a % 10;
+//         return pt
+//     }
+// }
+// const addNms = (a, b) => {
+//     let a2 = a.toString().split(''),
+//         b2 = b.toString().split(''),
+//         firs = +a2[0] + (+b2[0]),
+//         sec = +a2[1] + (+b2[1]),
+//         thr = +a2[2] + (+b2[2]);
+//     if(firs > 10) {
+//         firs = morTen(firs);
+//     }
+//     if(firs > 10) {
+//         firs = morTen(sec);
+//     }
+//     if(firs > 10) {
+//         firs = morTen(thr);
+//     }
+//     return firs + "" + sec + "" + thr
+// }
+//
+// console.log(addNms(222, 911))
+// console.log(addNms(200, 900))
+
+// exercise 83.
+
+// const longArr = (arr) => {
+//     let arrse = [];
+//     arr.map(i => {
+//         arrse.push(i.length)
+//     })
+//     return Math.max(...arrse)
+// }
+// console.log(longArr(['artrwetertwrett', 'aa', 'aaa', 'aaaaa', 'aaaa']))
+
+
+// exercise 84 not ready.
+
+
+// exercise 85.
+
+// my solution
+// const findArra = (arr) => {
+//     let toq = 0,
+//         juft = 0,
+//         twoArr = [];
+//     for (let i = 0; i < arr.length; i += 2) {
+//         toq += arr[i];
+//     }
+//     for (let j = 1; j < arr.length; j += 2) {
+//         juft += arr[j];
+//     }
+//     twoArr.push(toq, juft)
+//     return twoArr
+// }
+// console.log(findArra([1, 3, 6, 2, 5, 10]))
+
+
+// second solution
+// function alternate_Sums(arr) {
+//     var result = [0, 0];
+//     for(var i = 0; i < arr.length; i++)
+//     {
+//         if(i % 2) result[1] += arr[i];
+//         else
+//             result[0] += arr[i];
+//     }
+//     return result
+// }
+//
+// console.log(alternate_Sums([1, 3, 6, 2, 5, 10]))
+
+
+// exercise 86.
+
+// const findAngle = (num) => {
+//     if (num < 90) {
+//         return 'Acute angle'
+//     }
+//     if (num === 90) {
+//         return 'Right angle'
+//     }
+//     if (num < 180) {
+//         return 'Obtuse angle'
+//     }
+//     if (num === 180) {
+//         return 'Straight angle'
+//     }
+//     return "Straight angle.";
+// }
+//
+// console.log(findAngle(47))
+// console.log(findAngle(90))
+// console.log(findAngle(145))
+// console.log(findAngle(180))
+
+
+// exercise 87 not done.
+
+
+// exercise 88.
+
+// const numsT = (a, b, divisor) => {
+//     if (a % divisor === 0 && b % divisor === 0 || b % divisor !== 0 && b % divisor !== 0) {
+//         return true
+//     }
+//     return false
+// }
+//
+// console.log(numsT(10, 25, 5))
+// console.log(numsT(10, 20, 5))
+// console.log(numsT(10, 20, 3))
+// console.log(numsT(10, 20, 4))
+
+
+// exercise 89.
+//
+// function checkenthing(x, y, z) {
+//     return x + y === z || x * y === z || x / y === z || x - y === z;
+// }
+//
+// console.log(checkenthing(10, 25, 35))
+// console.log(checkenthing(10, 25, 250))
+// console.log(checkenthing(30, 25, 5))
+// console.log(checkenthing(100, 25, 4.0))
+// console.log(checkenthing(100, 25, 25))
+
+
+// exercise 90 not done.
+
+
+// exercise 91 not done.
+
+
+
+// exercise 92.
+//
+// function checkenthing2(arr) {
+//     var max = -1;
+//     var temp;
+//     for (let i = 0; i < arr.length - 1; i++)
+//     {
+//         temp = Math.abs(arr[i] - arr[i + 1]);
+//         max = Math.max(max, temp);
+//     }
+//     return max;
+// }
+//
+// console.log(checkenthing2([1, 2, 3, 8, 9]))
+// console.log(checkenthing2([1, 2, 3, 18, 9]))
+// console.log(checkenthing2([13, 2, 3, 8, 9]))
+
+
+// exercise 93.
+
+// my solution
+
+// const finMAxMin = (arr) => {
+//     let maxValue = Math.max(...arr);
+//     let minValue = Math.min(...arr);
+//     return maxValue - minValue
+// }
+// console.log(finMAxMin([1, 2, 3, 8, 9]))
+// console.log(finMAxMin([1, 2, 3, 18, 9]))
+// console.log(finMAxMin([13, 2, 3, 8, 9]))
+
+//second solution.
+
+// const findFor = (arr) => {
+//     let maxVal = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let k = 0; k < arr.length; k++) {
+//             let dif = Math.abs(arr[i] - arr[k]);
+//             maxVal = Math.max(maxVal, dif)
+//         }
+//     }
+//     return maxVal
+// }
+//
+// console.log(findFor([1, 2, 3, 8, 9]))
+// console.log(findFor([1, 2, 3, 18, 9]))
+// console.log(findFor([13, 2, 3, 8, 9]))
+
+
+// exercise 94 not done.
+
+// const mostAr = (arr) => {
+//     let index = {};
+//     let max_num = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (index[arr[i]]){
+//             index[arr[i]]++;
+//             max_num = arr[i]
+//         } else {
+//             index[arr[i]] = 1
+//         }
+//     }
+//     return max_num
+// }
+// console.log(mostAr([3, 3, 4, 3, 5, 3, 1, 5, 5, 5, 5, 5, 8, 1, 2, 2, 9]));
+
+
+// exercise 95.
+
+// my solution
+
+// const changeArr = (arr, first, second) => {
+//     let colArr = []
+//     arr.findIndex((value, i) => {
+//         if (value === first) {
+//             value = second
+//             colArr.push(value)
+//         } else {
+//             colArr.push(value)
+//         }
+//     })
+//     return colArr
+// }
+// console.log(changeArr([1, 2, 3, 2, 2, 8, 1, 9], 2, 5));
+
+//second solution
+
+// const findA = (arr, oldN, newN) => {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === oldN) {
+//             arr[i] = newN
+//         }
+//     }
+//     return arr;
+// }
+// console.log(findA([1, 2, 3, 2, 2, 8, 1, 9], 2, 5));
+
+// exercise 96.
+
+// const colc = (arr) => {
+//     let colca = 0;
+//     for (let i = 1; i < arr.length; i++) {
+//         colca += Math.abs(arr[i] - arr[i - 1]);
+//     }
+//     return colca
+// }
+// console.log(colc([1, 2, 3, 2, 123, -5]));
+
+
+// exercise 97 not done.
+
+// exercise 98.
+
+// function change_case(new_str) {
+//     var x = 0;
+//     var y = 0;
+//
+//     for (var i = 0; i < new_str.length; i++) {
+//         if (/[A-Z]/.test(new_str[i])) {
+//             x++;
+//         } else y++;
+//     }
+//
+//     if (y > x) return new_str.toLowerCase();
+//     return new_str.toUpperCase();
+// }
+//
+// console.log(change_case("Write"))
+// console.log(change_case("PHp"))
+// console.log(change_case("sdfsdf"))
+// console.log(change_case("AFDSF"))
+
+// exercise 99.
+//
+// const chartP = (str1, str2) => {
+//     const first = str1.split(''),
+//         secons = str2.split('');
+//         let rusult = true,
+//         maxLen = Math.max(first.length, secons.length);
+//     first.sort();
+//     secons.sort();
+//
+//     for (let i = 0; i < maxLen; i++) {
+//         if(first[i] !== secons[i]){
+//             rusult  = false;
+//         }
+//     }
+//     return rusult;
+// }
+//
+//
+// console.log(chartP("xyz", "zyx"))
+// console.log(chartP("xyz", "zyp"))
+
+
+// exercise 100.
+
+// const maschek = (arr1, arr2) => {
+//     let result = false;
+//     const maxLen = Math.max(arr1.length, arr2.length);
+//     for (let i = 0; i < maxLen; i++) {
+//         if (arr1.indexOf(arr2[i]) >= 0){
+//             result = true
+//         }
+//     }
+//     return result
+// }
+// console.log(maschek([1, 2, 3], [3, 4, 5]))
+// console.log(maschek([1, 2, 3], [5, 6, 7]))
 
 
 
