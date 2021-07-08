@@ -157,7 +157,158 @@
 // console.log(reverse3([1, 0, -1]));
 // console.log(reverse3([2, 3, 1]));
 
+/* TASK 74 */
 
+// function all_max(nums) {
+//
+//     return new Array(nums.length).fill(Math.max(...nums))
+//
+//     // let max = 0
+//     // let newArr = []
+//     // for (let i=0; i < nums.length; i++){
+//     //     if (max < nums[i]){
+//     //         max = nums[i]
+//     //     }
+//     // }
+//     // for (let i=0; i < nums.length; i++){
+//     //    newArr.push(max)
+//     // }
+//
+//     // var max_val = nums[0] > nums[2] ? nums[0] : nums[2];
+//     // nums[0] = max_val
+//     // nums[1] = max_val
+//     // nums[3] = max_val
+//     //
+//     // return nums
+// }
+//
+//
+// console.log(all_max([20, 30, 40]));
+// console.log(all_max([-7, -9, 0]));
+// console.log(all_max([12, 10, 3]));
 
+/* TASK 75 */
+
+// function middle_elements(arr1, arr2) {
+//     return [arr1[1], arr2[1]]
+// }
+//
+//
+// console.log(middle_elements([1, 2, 3], [1, 5, 6]));
+// console.log(middle_elements([3, 3, 3], [2, 8, 0]));
+// console.log(middle_elements([4, 2, 7], [2, 4, 5]));
+
+/* TASK 76 */
+
+// function started(arr) {
+//     return [arr[0], arr[arr.length - 1]]
+// }
+//
+// console.log(started([20, 20, 30]));
+// console.log(started([5, 2, 7, 8]));
+// console.log(started([17, 12, 34, 78]));
+
+/* TASK 77 */
+
+// function contains13(arr) {
+//     // for (let i=0; i < arr.length; i++){
+//     //    if (arr[i] === 1 || arr[i] === 3){
+//     //        return true
+//     //    }
+//     // }
+//     // return false
+//     return arr.indexOf(1) !== -1 || arr.indexOf(3) !== -1;
+// }
+//
+// console.log(contains13([1, 5, 2, 5, 7, 8, 1]));
+// console.log(contains13([2, 3]));
+// console.log(contains13([7, 5, 2, 6, 3, 6, 7, 9]));
+
+/* TASK 78 */
+
+// function is13(arr) {
+//     return arr.indexOf(1) === -1 && arr.indexOf(3) === -1;
+// }
+//
+// console.log(is13([7, 8]));
+// console.log(is13([3, 2]));
+// console.log(is13([0, 1]));
+
+/* TASK 79 */
+
+// function twice3040(arr) {
+//     if (arr.length > 1){
+//         let newObj = {}
+//         for (let i=0; i<arr.length; i++){
+//             if (newObj[arr[i]])
+//                 return true
+//             newObj[arr[i]] = true
+//         }
+//     } return false
+//
+// }
+//
+// console.log(twice3040([30, 20 ,10, 12]));
+// console.log(twice3040([40, 40]));
+// console.log(twice3040([20, 20]));
+// console.log(twice3040([30]));
+
+/* TASK 80 */
+
+// function swap(arr) {
+//     // return arr.reverse()
+//     let newArr = []
+//     for (let i = arr.length; i--;) {
+//         newArr.push(arr[i])
+//     }return newArr
+//
+// }
+//
+// console.log(swap([1, 2, 3, 4]));
+// console.log(swap([0, 2, 1]));
+// console.log(swap([3]));
+
+/* TASK 81 */
+
+// function add_two_digits(digit) {
+//     return digit.toString().split('').map((item) => +item).reduce((accumulator, currVal ) => accumulator + currVal)
+// }
+//
+// console.log(add_two_digits(25))
+// console.log(add_two_digits(5552))
+
+/* TASK 82 */
+
+// function add_two_int_without_carrying(arr1, arr2) {
+//     arr1 = arr1.toString()
+//     arr2 = arr2.toString()
+//     let tot = ''
+//     for (let i = 0; i < arr1.length; i++) {
+//         let firstN = +arr1[i]
+//         let secondN = +arr2[i]
+//         tot += ((firstN + secondN)%10).toString()
+//     }
+//     return tot
+// }
+//
+// console.log(add_two_int_without_carrying(322, 911))
+// console.log(add_two_int_without_carrying(200, 900))
+
+/* TASK 83 */
+
+function longest_string(arr) {
+    let newArr = {
+        item: '',
+        length: 0,
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (newArr[i].length > arr[i].length ){
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
+
+console.log(longest_string(['a', 'aa', 'aaa', 'aaaaa','aaaa']))
 
 
