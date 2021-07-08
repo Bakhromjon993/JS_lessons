@@ -1221,7 +1221,14 @@
 
 
 // exercise 84 not ready.
-
+// function letters(string) {
+//     let word = ''
+//     for(let i = 0; i < string.length; i++){
+//         word += String.fromCharCode(string.charCodeAt(i) + 1)
+//     }
+//     return word
+// }
+// console.log(letters('abcdxyz'))
 
 // exercise 85.
 
