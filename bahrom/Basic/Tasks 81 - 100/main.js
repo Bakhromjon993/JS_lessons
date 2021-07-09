@@ -140,26 +140,41 @@
 
 /* TASK 91 */
 
-function array_max_consecutive_sum(arr, k) {
-    let max = 0
-    for (let i = 0; i < arr.length; i++) {
-        for(let j = k-1; j--;) {
-            let temp_sum = arr[i]
-            if (arr[i + j+1]){
-                temp_sum+=arr[i+j+1]
-            }
-
-            if(max< temp_sum) max = temp_sum
-        }
-
-    }
-    return max
-
-}
-
-console.log(array_max_consecutive_sum([1, 2, 3, 14, 6], 3))
+// function array_max_consecutive_sum(arr, k) {
+//     let max = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         for(let j = k-1; j--;) {
+//             let temp_sum = arr[i]
+//             if (arr[i + j+1]){
+//                 temp_sum+=arr[i+j+1]
+//             }
+//
+//             if(max< temp_sum) max = temp_sum
+//         }
+//
+//     }
+//     return max
+//
+// }
+//
+// console.log(array_max_consecutive_sum([1, 2, 3, 14, 6], 3))
 // console.log(array_max_consecutive_sum([2, 3, 5, 1, 6], 3))
 // console.log(array_max_consecutive_sum([9, 3, 5, 1, 7], 2))
 
+/* TASK 93 */
 
+function asd(arr) {
+    let newObj = {
+        item: 0,
+        repeat: 0
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (newObj[arr[i]] === arr[i]){
+            newObj.repeat++;
+        }else {
+            newObj.item = arr[i]
+        }
+    }return newObj
+}
 
+console.log(asd([1,2,3,2,2,8,2,1,9]))
