@@ -161,20 +161,130 @@
 // console.log(array_max_consecutive_sum([2, 3, 5, 1, 6], 3))
 // console.log(array_max_consecutive_sum([9, 3, 5, 1, 7], 2))
 
+/* TASK 92 */
+
+// function max_difference(arr) {
+//     let max = -1
+//     let temp_val = 0
+//     for (let i = 0; i < arr.length - 1; i++) {
+//         temp_val = Math.abs([arr[i] - arr[i + 1]])
+//         max = Math.max(max, temp_val)
+//     }
+//     return max
+// }
+//
+// console.log(max_difference([1, 2, 3, 8, 9]))
+// console.log(max_difference([1, 2, 3, 18, 9]))
+// console.log(max_difference([13, 2, 3, 8, 9]))
+
 /* TASK 93 */
 
-function asd(arr) {
-    let newObj = {
-        item: 0,
-        repeat: 0
-    }
-    for (let i = 0; i < arr.length; i++) {
-        if (newObj[arr[i]] === arr[i]){
-            newObj.repeat++;
-        }else {
-            newObj.item = arr[i]
+// function array_max_diff(arr) {
+//     let max = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < i; j++) {
+//             console.log(arr[i] + arr[j])
+//         }
+//     }
+//     return max
+// }
+//
+// console.log(array_max_diff([1, 2, 3, 8, 9]))
+// console.log(array_max_diff([1, 2, 3, 18, 9]))
+// console.log(array_max_diff([13, 2, 3, 8, 9]))
+
+/* TASK 94 */
+
+// function asd(arr) {
+//     let newObj = {
+//         num: 0,
+//         max: 0
+//     }
+//     for (let i = 0; i < arr.length; i++) {
+//         if (newObj[arr[i]]){
+//             newObj[arr[i]]++
+//             if (newObj[arr[i]] > newObj.max){
+//                 newObj.max = newObj[arr[i]]
+//                 newObj.num = arr[i]
+//             }
+//         } else {
+//            newObj[arr[i]] = 1
+//         }
+//     }
+//     return `${newObj.num} is repeated ${newObj.max} times`
+// }
+//
+// console.log(asd([1,2,3,2,2,8,2,1,9]))
+
+/* TASK 95 */
+
+// function array_element_replace(arr, del, rep) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === del){
+//             arr[i] = rep
+//         }
+//     }
+//     return arr
+// }
+//
+// num = [1, 2, 3, 2, 2, 8, 1, 9];
+// console.log("Original Array: "+num);
+// console.log(array_element_replace(num, 2, 5));
+
+/* TASK 96 */
+
+// function sum_adjacent_difference(arr) {
+//     let result = 0
+//     for (let i = 1; i < arr.length; i++) {
+//         result += Math.abs(arr[i] - arr[i - 1])
+//     }
+//     return result
+// }
+//
+// console.log(sum_adjacent_difference([1, 2, 3, 2, -5]));
+
+/* TASK 97 */
+
+
+
+
+/* TASK 98 */
+
+// function change_case(string) {
+//     let x = 0
+//     let y = 0
+//
+//     for (let i = 0; i < string.length; i++) {
+//         if (/[A-Z]/.test(string[i])){
+//             x++
+//         } else {
+//             y++
+//         }
+//     }
+//
+//     if(x > y){
+//         return string.toUpperCase()
+//     } return string.toLowerCase()
+// }
+//
+// console.log(change_case("Write"))
+// console.log(change_case("PHp"))
+
+/* TASK 99 */
+
+function rearrangement_characters(str1, str2) {
+    let first = str1.split('').sort()
+    let second = str2.split('').sort()
+    let result = true
+
+
+    for (let i = 0; i < Math.max(first.length, second.length); i++) {
+        if(first[i] !== second[i]){
+            return false
         }
-    }return newObj
+    }
+    return result
 }
 
-console.log(asd([1,2,3,2,2,8,2,1,9]))
+console.log(rearrangement_characters("xyz", "zyx"))
+console.log(rearrangement_characters("xyz", "zyp"))
