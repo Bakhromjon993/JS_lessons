@@ -18,7 +18,28 @@ let nums = [5,6,3,6,2,6,8,32,3234,534,34,64]
 // }
 // console.log(text)
 
-nums.forEach((value, index, array) => {
-    console.log(text = array)
-})
+// nums.forEach((value, index, array) => {
+//     console.log(text = array)
+// })
 
+// let i = 0
+// do {
+//     console.log(text += "The number is " + i)
+//     i++
+// }
+// while (i < 10)
+
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0
+// do {
+//     console.log(text += cars[i])
+//     i++
+// }
+// while (i < cars.length)
+
+for (let j = 0; j < cars.length; j++) {
+    if (cars[j] === 'Saab'){
+        console.log(text = cars[j])
+        break
+    }
+}
