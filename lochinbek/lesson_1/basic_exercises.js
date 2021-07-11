@@ -1655,6 +1655,113 @@
 // console.log(funt(1, 2, 3))
 
 
+// exercise 112.
+
+// const factorial = number => {
+//     let makeNum = [];
+//     let collect = null;
+//     let temp = 0;
+//     for (let i = 0; i <= number; i++) {
+//         makeNum.push(i);
+//         makeNum[0] = 1;
+//     }
+//    collect = makeNum.reduce((a, b)=> a*b, 1)
+//     while (collect % 5 === 0) {
+//         collect /= 5;
+//         temp++;
+//     }
+//     return collect + ' ' + temp
+// }
+//
+// console.log(factorial(8))
+// console.log(factorial(9))
+// console.log(factorial(10))
+
+
+// exercise 113 not ready.
+
+// function int_sum(num) {
+//     var s_sum = 0;
+//     while (num > 0) {
+//         console.log(num);
+//         s_sum += num;
+//         num = Math.floor(num / 2);
+//     }
+//     // return s_sum;
+// }
+// console.log(int_sum(8))
+// console.log(int_sum(9))
+// console.log(int_sum(26))
+
+// const nums = number => {
+//     let topNum = [];
+//     let botNum = null;
+//     let numArr = []
+//     for (let i = 0; i < number; i++) {
+//         numArr.push(i)
+//     }
+//     for (let j = 0; j < numArr.length; j++) {
+//         topNum.push(numArr[j]/numArr[j]*Math.sqrt(numArr[j]))
+//     }
+//     return topNum
+// }
+//
+//
+// console.log(nums(8))
+// console.log(nums(9))
+// console.log(nums(26))
+
+
+// exercise 114.
+
+// const findSent = sent => {
+//    let firstLet = sent[0],
+//        lastLet = sent[sent.length - 1];
+//    return /[A-Z]/.test(firstLet) && lastLet === '.'
+// }
+//
+// console.log(findSent("This tool will help you write better English and efficiently corrects texts."));
+// console.log(findSent("This tool will help you write better English and efficiently corrects texts"));
+// console.log(findSent("this tool will help you write better English and efficiently corrects texts."));
+
+
+// exercise 115 not done.
+
+
+// exercise 116 not done.
+
+
+// exercise 117 not done.
+
+
+// exercise 118 not done.
+
+
+// exercise 119.
+
+// const nbs = (x, y, z) => {
+//     return y >= x && y <= z;
+// }
+//
+// console.log(nbs(1, 2, 3));
+// console.log(nbs(1, 2, -3));
+// console.log(nbs(1.1, 1.2, 1.3));
+
+
+// exercise 120.
+
+// const  check = (a, b, x, y, r) => {
+//     var t = (a - x) * (a - x) + (b - y) * (b - y);
+//     r *=r;
+//     if (t < r) {
+//         return true;
+//     }
+//     return false;
+// }
+//
+// console.log(check(0, 0, 2, 4, 6));
+// console.log(check(0, 0, 6, 8, 6));
+
 
 
 
