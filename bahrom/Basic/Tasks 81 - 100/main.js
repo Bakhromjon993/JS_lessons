@@ -272,19 +272,32 @@
 
 /* TASK 99 */
 
-function rearrangement_characters(str1, str2) {
-    let first = str1.split('').sort()
-    let second = str2.split('').sort()
-    let result = true
+// function rearrangement_characters(str1, str2) {
+//     let first = str1.split('').sort()
+//     let second = str2.split('').sort()
+//     let result = true
+//
+//
+//     for (let i = 0; i < Math.max(first.length, second.length); i++) {
+//         if(first[i] !== second[i]){
+//             return false
+//         }
+//     }
+//     return result
+// }
+//
+// console.log(rearrangement_characters("xyz", "zyx"))
+// console.log(rearrangement_characters("xyz", "zyp"))
 
+/* TASK 100 */
 
-    for (let i = 0; i < Math.max(first.length, second.length); i++) {
-        if(first[i] !== second[i]){
-            return false
-        }
-    }
-    return result
-}
-
-console.log(rearrangement_characters("xyz", "zyx"))
-console.log(rearrangement_characters("xyz", "zyp"))
+// function check_common_element(arr1, arr2) {
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr2.indexOf(arr1[i]) !== -1){
+//             return true
+//         }
+//     }return false
+// }
+//
+// console.log(check_common_element([1,2,3], [3,4,5]));
+// console.log(check_common_element([1,2,3], [5,6,7]));
