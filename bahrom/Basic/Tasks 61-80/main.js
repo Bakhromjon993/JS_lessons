@@ -236,22 +236,22 @@
 
 /* TASK 79 */
 
-// function twice3040(arr) {
-//     if (arr.length > 1){
-//         let newObj = {}
-//         for (let i=0; i<arr.length; i++){
-//             if (newObj[arr[i]])
-//                 return true
-//             newObj[arr[i]] = true
-//         }
-//     } return false
-//
-// }
-//
-// console.log(twice3040([30, 20 ,10, 12]));
-// console.log(twice3040([40, 40]));
-// console.log(twice3040([20, 20]));
-// console.log(twice3040([30]));
+function twice3040(arr) {
+    if (arr.length > 1){
+        let newObj = {}
+        for (let i=0; i<arr.length; i++){
+            if (newObj[arr[i]])
+                return true
+            newObj[arr[i]] = true
+        }
+    } return false
+
+}
+
+console.log(twice3040([30, 20 ,10, 12]));
+console.log(twice3040([40, 40]));
+console.log(twice3040([20, 20]));
+console.log(twice3040([30]));
 
 /* TASK 80 */
 

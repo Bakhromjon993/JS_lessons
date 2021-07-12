@@ -1325,7 +1325,6 @@
 // exercise 91 not done.
 
 
-
 // exercise 92.
 //
 // function checkenthing2(arr) {
@@ -1495,6 +1494,273 @@
 // }
 // console.log(maschek([1, 2, 3], [3, 4, 5]))
 // console.log(maschek([1, 2, 3], [5, 6, 7]))
+
+
+// exercise 101 not done.
+
+
+// exercise 102.
+
+// const numbers = arr => {
+//     let result = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] > arr[j]) {
+//                 result++
+//             }
+//         }
+//     }
+//     return result
+// }
+//
+// console.log(numbers([0, 3, 2, 5, 9]));
+// console.log(numbers([1, 5, 4, 3]));
+// console.log(numbers([10, 30, 20, -10]));
+
+
+// exercise 103 not done.
+
+
+// exercise 104.
+
+// const difr = (arr, n) => {
+//     let maxVal = -1;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             let a = Math.abs(arr[i] - arr[j]);
+//             if (a <= n) {
+//                 maxVal = Math.max(maxVal, a)
+//             }
+//         }
+//     }
+//     return maxVal
+// }
+//
+// console.log(difr([12, 10, 33, 34], 10));
+// console.log(difr([12, 10, 33, 34], 24));
+// console.log(difr([12, 10, 33, 44], 40));
+
+
+// exercise 105 not done.
+
+
+// exercise 106.
+
+// const minD = (num, d) => {
+//     if (num % d !== 0) {
+//         return num;
+//     }
+//     if (d=== 1) {
+//         return num;
+//     }
+//     while (num % d === 0) {
+//         num = num / d
+//     }
+//     return num
+// }
+// console.log(minD(-12, 2))
+// console.log(minD(14, 2))
+// console.log(minD(13, 1))
+
+
+// exercise 107.
+
+// const findAll = arr => {
+//     let temp = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] % arr[j] === 0 || arr[j] % arr[i] === 0) {
+//                temp++
+//             }
+//         }
+//     }
+//     return temp
+// }
+//
+// console.log(findAll([1, 2, 3]))
+// console.log(findAll([2, 4, 6]))
+// console.log(findAll([32, 4, 8]))
+
+
+// exercise 108.
+
+// function dot_product(vector1, vector2) {
+//     var result = 0;
+//     for (var i = 0; i < 3; i++) {
+//         result += vector1[i] * vector2[i];
+//     }
+//     return result;
+// }
+// console.log(dot_product([1,2,3], [1,2,3]))
+// console.log(dot_product([2,4,6], [2,4,6]))
+// console.log(dot_product([1,1,1], [0,1,-1]))
+
+
+// exercise 109.
+
+// const getNum = num => {
+//     let arr = [];
+//     for (let i = 2; i <= num; i++) {
+//         let num = true;
+//         for (let j = 2; j <= Math.floor(Math.sqrt(i)); j++) {
+//             if (i % j === 0) {
+//                 num = false;
+//                 break;
+//             }
+//         }
+//         if(num) {
+//             arr.push(i)
+//         }
+//     }
+//     return arr
+// }
+//
+// console.log(getNum(5))
+// console.log(getNum(11))
+// console.log(getNum(20))
+
+
+// exercise 110.
+
+// const findNum = (arr, num) => {
+//     let temp = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0 && arr[i] !== num) {
+//             temp++
+//         }
+//         if (arr[i]===num) {
+//             return temp
+//         }
+//     }
+//     return -1
+// }
+// console.log(findNum([1,2,3,4,5,6,7,8], 5))
+// console.log(findNum([1,3, 2, 5,6,7,8], 6))
+// console.log(findNum([1,3, 2, 5,6,7,8], 8))
+// console.log(findNum([1,3, 2, 5,6,7,8], 10))
+
+
+// exercise 111.
+
+// const funt = (x, y, z) => {
+//     if ((x !== y) && (x !== z) && (y !== z)) {
+//         return 'unequal';
+//     }
+//     if (x === y) return z;
+//     if (x === z) return y;
+//     return x;
+// }
+// console.log(funt(1, 2, 2))
+// console.log(funt(1, 1, 2))
+// console.log(funt(1, 2, 3))
+
+
+// exercise 112.
+
+// const factorial = number => {
+//     let makeNum = [];
+//     let collect = null;
+//     let temp = 0;
+//     for (let i = 0; i <= number; i++) {
+//         makeNum.push(i);
+//         makeNum[0] = 1;
+//     }
+//    collect = makeNum.reduce((a, b)=> a*b, 1)
+//     while (collect % 5 === 0) {
+//         collect /= 5;
+//         temp++;
+//     }
+//     return collect + ' ' + temp
+// }
+//
+// console.log(factorial(8))
+// console.log(factorial(9))
+// console.log(factorial(10))
+
+
+// exercise 113 not ready.
+
+// function int_sum(num) {
+//     var s_sum = 0;
+//     while (num > 0) {
+//         console.log(num);
+//         s_sum += num;
+//         num = Math.floor(num / 2);
+//     }
+//     // return s_sum;
+// }
+// console.log(int_sum(8))
+// console.log(int_sum(9))
+// console.log(int_sum(26))
+
+// const nums = number => {
+//     let topNum = [];
+//     let botNum = null;
+//     let numArr = []
+//     for (let i = 0; i < number; i++) {
+//         numArr.push(i)
+//     }
+//     for (let j = 0; j < numArr.length; j++) {
+//         topNum.push(numArr[j]/numArr[j]*Math.sqrt(numArr[j]))
+//     }
+//     return topNum
+// }
+//
+//
+// console.log(nums(8))
+// console.log(nums(9))
+// console.log(nums(26))
+
+
+// exercise 114.
+
+// const findSent = sent => {
+//    let firstLet = sent[0],
+//        lastLet = sent[sent.length - 1];
+//    return /[A-Z]/.test(firstLet) && lastLet === '.'
+// }
+//
+// console.log(findSent("This tool will help you write better English and efficiently corrects texts."));
+// console.log(findSent("This tool will help you write better English and efficiently corrects texts"));
+// console.log(findSent("this tool will help you write better English and efficiently corrects texts."));
+
+
+// exercise 115 not done.
+
+
+// exercise 116 not done.
+
+
+// exercise 117 not done.
+
+
+// exercise 118 not done.
+
+
+// exercise 119.
+
+// const nbs = (x, y, z) => {
+//     return y >= x && y <= z;
+// }
+//
+// console.log(nbs(1, 2, 3));
+// console.log(nbs(1, 2, -3));
+// console.log(nbs(1.1, 1.2, 1.3));
+
+
+// exercise 120.
+
+// const  check = (a, b, x, y, r) => {
+//     var t = (a - x) * (a - x) + (b - y) * (b - y);
+//     r *=r;
+//     if (t < r) {
+//         return true;
+//     }
+//     return false;
+// }
+//
+// console.log(check(0, 0, 2, 4, 6));
+// console.log(check(0, 0, 6, 8, 6));
 
 
 
