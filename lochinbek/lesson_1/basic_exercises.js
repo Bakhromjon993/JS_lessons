@@ -1763,6 +1763,205 @@
 // console.log(check(0, 0, 6, 8, 6));
 
 
+// exercise 121 not done.
+
+
+// exercise 122.
+
+// const incriseArr = arr => {
+//     let num = true;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[i] >= arr[j]) {
+//                 num = false;
+//                 break;
+//             } else {
+//                 num = true
+//             }
+//         }
+//     }
+//     return num
+// }
+// console.log(incriseArr([1, 2, 3]));
+// console.log(incriseArr([1, 2, 2]))
+// console.log(incriseArr([-3, -2, -1]))
+// console.log(incriseArr([1, 2, 3, 7, 213]));
+// console.log(incriseArr([1, 2, 2, -1]))
+// console.log(incriseArr([-3, -2, -1]))
+
+
+// exercise 123.
+
+// my solution
+
+// const incArr = (arr) => {
+//     let status = false;
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i + 1; j < arr.length; j++) {
+//             if (arr[j] - arr[i] === 1) {
+//                 status = true;
+//             } else {
+//                 status = false;
+//             }
+//         }
+//     }
+//     return status;
+// }
+//
+// console.log(incArr([1, 2, 3, 4], 3));
+// console.log(incArr([1, 2, 3, 234, 5], 5));
+// console.log(incArr([1, 2, 3, 4, 5, 6, 7], 5));
+
+
+// second solution
+
+// function is_permutation(input_arr, n) {
+//     for (var i = 0; i < n; i++) {
+//         if (input_arr.indexOf(i + 1) < 0)
+//             return false;
+//     }
+//     return true;
+// }
+// console.log(is_permutation([1, 2, 3, 4], 3));
+// console.log(is_permutation([1, 2, 3, 23432, 5], 5));
+// console.log(is_permutation([1, 2, 3, 4, 5, 6, 7], 5));
+
+
+// exercise 124.
+
+// function nor(a, b) {
+//     return (!a && !b)
+// }
+// console.log(nor(true, false));
+// console.log(nor(false, false));
+// console.log(nor(true, true));
+
+
+// exercise 125.
+
+//first solution
+
+// const longStr = arr => {
+//     let lgth = 0;
+//     let longest;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i].length > lgth) {
+//             lgth = arr[i].length;
+//             longest = arr[i]
+//         }
+//     }
+//     return longest
+// }
+//
+// console.log(longStr(["ab", "a", "abcd"]));
+// console.log(longStr(["ab", "ab", 'wwerwrwrwrewerwrerwerrrw', "ab", '131231233']));
+
+//second solution
+
+// const findLong = arr => {
+//     let long = arr.reduce((a, b) => {
+//         return a.length > b.length ? a : b
+//     })
+//     return long
+// }
+//
+// console.log(findLong(["ab", "a", "abcd"]));
+// console.log(findLong(["ab", "ab", '23', "ab", '131231233']));
+
+// therd sloution
+
+// function longest_str_in_array(arra) {
+//     var max_str = arra[0].length;
+//     var ans = arra[0];
+//     for (var i = 1; i < arra.length; i++) {
+//         var maxi = arra[i].length;
+//         if (maxi > max_str) {
+//             ans = arra[i];
+//             max_str = maxi;
+//         }
+//     }
+//     return ans;
+// }
+// console.log(longest_str_in_array(["ab", "a", "abcd"]));
+// console.log(longest_str_in_array(["ab", "ab", "ab"]));
+
+
+// exercise 126.
+
+// my solution
+
+// const findLong = arr => {
+//     let maXValue = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > maXValue && arr[i] % 2 === 0) {
+//             maXValue = arr[i]
+//         }
+//     }
+//     return maXValue
+// }
+// console.log(findLong([20, 40, 200, 5345, 534, 42342347, 66666666666]));
+// console.log(findLong([20, 40, 200, 301, 666667]));
+
+
+//second solution
+
+// function max_even(arra) {
+//
+//     arra.sort((x, y) => y - x);
+//
+//     for (var i = 0; i < arra.length; i++) {
+//         if (arra[i] % 2 === 0)
+//             return arra[i];
+//     }
+// }
+//
+// console.log(max_even([20, 40, 200]));
+// console.log(max_even([20, 40, 200, 301, 66666, 345345555]));
+
+
+// exercise 127 not done.
+
+
+// exercise 128.
+
+//my solution
+
+// const nb = n => {
+//     let maxVal = 0;
+//     for (let i = n; i < n + 9; i++) {
+//         if (n % 10 === 0) {
+//             maxVal = n
+//         }
+//         else {
+//             n++
+//         }
+//     }
+//     return maxVal
+// }
+// console.log(nb(56));
+// console.log(nb(582));
+
+
+// second solution
+
+// const nrnull = num => {
+//     while (num % 10){
+//         num++
+//     }
+//     return num
+// }
+//
+// console.log(nrnull(56));
+// console.log(nrnull(582));
+
+
+
+
+
+
+
+
+
 
 
 
