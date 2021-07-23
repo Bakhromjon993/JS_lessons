@@ -1955,16 +1955,166 @@
 // console.log(nrnull(582));
 
 
+// exercise 129 not done.
 
 
+// exercise 130.
+
+// const evenNum = num => {
+//     let numStr = num.toString();
+//     let temp = 0
+//     for (let i = 0; i < numStr.length; i++) {
+//         if (numStr[i] % 2 === 0) {
+//             temp++
+//         }
+//     }
+//     return temp
+// }
+// console.log(evenNum(55645687685623123));
+// console.log(evenNum(1020));
+// console.log(evenNum(102));
 
 
+// exercise 131.
+
+// const colcf = arr => {
+//     var newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         newArr[i] = 0;
+//         for (let j = 0; j < i + 1; j++) {
+//             newArr[i] += arr[j]
+//         }
+//     }
+//     return newArr
+// }
+// console.log(colcf([1, 2, 3, 4, 5]));
+// console.log(colcf([1, 2, -3, 4, 5]));
 
 
+// exercise 132 not done.
 
 
+// exercise 133.
+
+// const fraction = arr => {
+//     return Math.abs(arr[0] / arr[1]) < 1
+//     ? "true" : 'false'
+// }
+// console.log(fraction([12, 300]));
+// console.log(fraction([2, 4]));
+// console.log(fraction([103, 3]));
+// console.log(fraction([104, 2]));
+// console.log(fraction([5, 40]));
 
 
+// exercise 134.
+
+// const changeChar = str => {
+//     var rlt = [];
+//     for (let i = 0; i < str.length; i++) {
+//         var char_order = str.charCodeAt(i) - 'a'.charCodeAt(0),
+//             change_char = 25 - char_order + 'a'.charCodeAt(0);
+//         rlt.push(String.fromCharCode(change_char))
+//     }
+//     return rlt.join('')
+// }
+//
+// console.log(changeChar("abcxyz"));
+// console.log(changeChar("python"));
+
+
+// exercise 135.
+
+
+// const removeNum = str => {
+//     let arrChar = str.split('');
+//     let restArr = [];
+//     for (let i = 0; i<arrChar.length; i++){
+//         if (str.indexOf(arrChar[i])===str.lastIndexOf(arrChar[i])){
+//             restArr.push(arrChar[i])
+//         }
+//     }
+//     return restArr.join('')
+// }
+//
+// console.log(removeNum("abcdabc"));
+// console.log(removeNum("python"));
+// console.log(removeNum("abcabc"));
+// console.log(removeNum("1365451"));
+
+
+// exercise 136.
+
+// const findNumb = str => {
+//     return str.replace(/[0-9]/, '$');
+// }
+//
+// console.log(findNumb("abc1dabc"));
+// console.log(findNumb("p3ython"));
+// console.log(findNumb("ab1cabc"));
+
+
+// exercise 138.
+
+
+// first
+// const fifteen = number => {
+//     if (number <= 15) {
+//         return 15
+//     } else {
+//         return number
+//     }
+// }
+//
+// console.log(fifteen("123"));
+// console.log(fifteen("10"));
+// console.log(fifteen("5"));
+
+
+//second
+// function test_fifteen(num) {
+//     while (num < 15) {
+//         num++;
+//     }
+//     return num;
+// }
+//
+// console.log(test_fifteen("123"));
+// console.log(test_fifteen("10"));
+// console.log(test_fifteen("5"));
+
+
+// exercise 139.
+
+// const tenFin = arr => {
+//     let int = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 10 === 0) {
+//             int = i
+//         }
+//     }
+//     return int
+// }
+// console.log(tenFin([1, 22, 30, 54, 56]));
+// console.log(tenFin([1, 22, 32, 54, 56]));
+// console.log(tenFin([1, 22, 32, 54, 50]));
+
+// exercise 140.
+
+
+// const sameNums = num => {
+//     let numString = num.toString().split('');
+//     let sts = false;
+//     numString.sort((a, b) => {
+//         if (a === b) {
+//             return true
+//         }
+//     })
+// }
+//
+// console.log(sameNums(1234));
+// console.log(sameNums(1111));
+// console.log(sameNums(22222222));
 
 
 
