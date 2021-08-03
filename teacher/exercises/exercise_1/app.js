@@ -1,60 +1,47 @@
-
-// Question # 1
-
-// const compare = (primary, secondary) => {
-//     var primaryKeys = Object.keys(primary),
-//     secondaryKeys = Object.keys(secondary),
-//     secondaryLen = secondaryKeys.length,
-//     matches = 0;
-//     for (var i = 0; i < secondaryLen; i++) {
-//         if (primaryKeys.includes(secondaryKeys[i])) {
-//             matches++;
+// const isLowerTringular = (matrix) => {
+//     var matrixLength = matrix.length, 
+//         childLength = matrix[0].length,
+//         i = 0;
+//     for (i; i < matrixLength - 1; i++) {
+//         var j = i + 1;
+//         for (j; j < childLength; j++) {
+//             if (matrix[i][j] !== 0) {
+//                 return false;
+//             }
 //         }
 //     }
-//     return matches == secondaryLen ? true : false;
+//     return true;
 // };
 
-// const data = compare({ name: "Bekzod", age: 34, country: "Uzbekistan" }, { name: "Shaxzod", age: 23 });
+// console.log(isLowerTringular([[1, 0, 0],[2, 0, 0], [0, 3, 3]]));
+// console.log(isLowerTringular([[1, 0, 1],[2, 0, 0], [0, 3, 3]]));
 
-// console.log(data);
-
-
-// const matches = (obj, source) =>
-//   Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key]);
-// console.log(matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: false })); // true
-// console.log(matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
-// console.log(matches({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
+// 1 0 0
+// 2 0 0
+// 0 3 3
 
 
 
-////////////////// exercise 36
-
-// const compareNums3 = (a, b, c) => {
-// 	let x = getLastDigit(a),
-// 		y = getLastDigit(b),
-// 		z = getLastDigit(c);
-// 	if (x === y && x === z && y === z) {
-// 		return true;
-// 	}
-// 	return false;
+// function lower_triangular_matrix(user_matrix) {
+//     for (var i = 0; i < user_matrix.length; i++) 
+//          {
+//         for (var j = 0; j < user_matrix[0].length; j++) 
+//             {
+//             if (j > i && user_matrix[i][j] !== 0)
+//               return false;
+//         }
+//     }
+//     return true;
 // }
 
-// const getLastDigit = (number) => {
-// 	let numStr = number.toString();
-// 	return parseInt(numStr.charAt(numStr.length - 1));
-// }
-
-// console.log(compareNums3(12345, 12345, 13339));
-// console.log(compareNums3(-23, 10, 20));
-// console.log(compareNums3(100020, 510, 440));
+// console.log(lower_triangular_matrix([[1, 0, 0],[2, 0, 0], [0, 3, 3]]));
+// console.log(lower_triangular_matrix([[1, 0, 1],[2, 0, 0], [0, 3, 3]]));
 
 
+const reverseBitOrder = (integer) => {
+    return parseInt(integer.toString(2).split("").reverse().join(""), 2);
+};
 
-// const compareNumbers = (numOne, numTwo, numThree) => {
-// 	let a = numOne % 10,
-// 		b = numTwo % 10,
-// 		c = numThree % 10;
-// 	return a == b && a == c && b == c;
-// };
+console.log(reverseBitOrder(56));
 
-// console.log(compareNumbers(34, 564, 768));
+// 56 = 111000   =>  000111 = 7
