@@ -1,5 +1,16 @@
-const median = (numbers) => {
-    return numbers.reduce((sum, item) => sum += item, 0) / numbers.length;
-};
+console.time("While");
+let i = 0,
+    text = "";
+while (i < 1000000) {
+    text += i + ' ';
+    i++;
+}
+console.timeEnd("While");
 
-median([2, 5, 7, 56.7, -23]);
+console.time("For");
+let j = 0,
+    anotherText = "";
+for (; j < 1000000; j++) {
+    anotherText += j + ' ';
+} 
+console.timeEnd("For");

@@ -14,27 +14,27 @@
 // }
 
 /* TASK 3 */
-let today = new Date()
-let dd = today.getDate()
-let MM = (today.getMonth() + 1)
-const yyyy = today.getFullYear()
-if (dd < 10){
-    dd = '0' + dd
-}
-if (MM < 10){
-    MM = '0' + MM
-}
-today = MM + "-" + dd + "-" + yyyy
-console.log(today)
-today = MM + "/" + dd + "/" + yyyy
-console.log(today)
-today = dd + "-" + MM + "-" + yyyy
-console.log(today)
-today = dd + "/" + MM + "/" + yyyy
-console.log(today)
+// let today = new Date()
+// let dd = today.getDate()
+// let MM = (today.getMonth() + 1)
+// const yyyy = today.getFullYear()
+// if (dd < 10){
+//     dd = '0' + dd
+// }
+// if (MM < 10){
+//     MM = '0' + MM
+// }
+// today = MM + "-" + dd + "-" + yyyy
+// console.log(today)
+// today = MM + "/" + dd + "/" + yyyy
+// console.log(today)
+// today = dd + "-" + MM + "-" + yyyy
+// console.log(today)
+// today = dd + "/" + MM + "/" + yyyy
+// console.log(today)
 
-const fullDate = 'dd/MM/yyyy'.replace('dd', dd,).replace('MM', MM).replace('yyyy', yyyy);
-console.log(fullDate)
+// var fullDate = 'dd/MM/yyyy'.replace('dd', dd,).replace('MM', MM).replace('yyyy', yyyy)
+// console.log(fullDate)
 //
 // /* TASK 4 */
 //
