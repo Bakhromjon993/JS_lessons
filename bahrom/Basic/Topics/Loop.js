@@ -19,6 +19,8 @@ let nums = [5,6,3,6,2,6,8,32,3234,534,34,64]
 // console.log(text)
 
 nums.forEach((value, index, array) => {
-    console.log(text = array)
+    console.log(text = array
+
+    )
 })
 
